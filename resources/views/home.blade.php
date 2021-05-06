@@ -32,7 +32,7 @@
                         </p>
                         <p class="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
                             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc,
-                            ullamcorper malesuada. Eleifend condimentum id viverra nullo.
+                            ullamcorper malesuada. Eleifend condimentum id viverra nulli.
                         </p>
                     </div>
                     <div

@@ -18,7 +18,7 @@
                 <div class="max-w-md px-4 mx-auto sm:max-w-4xl sm:px-6 lg:p-0 lg:h-full ">
                     <div
                         class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:h-full lg:w-full">
-                        <img class="object-fill" src=" {{$category->image}}" alt="">
+                        <img class="object-fill" src=" {{ asset($category->image) }}" alt="">
                     </div>
                 </div>
             </div>

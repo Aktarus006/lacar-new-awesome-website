@@ -40,13 +40,13 @@ Route::get('/solutions', function () {
     return view('layouts.pages.solutions');
 });
 
-// Route::get('/restricted', ['middleware' => 'littlegatekeeper', function () {
-//     return view('layouts.pages.restrictedAreaIndex');
-// }]);
+Route::get('/restricted', ['middleware' => 'littlegatekeeper', function () {
+    return view('layouts.pages.restrictedAreaIndex');
+}]);
 
 
-// Route::get('/login', [LoginController::class, 'createForm']);
-// Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/login', [LoginController::class, 'createForm']);
+Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/contact', [ContactFormController::class, 'createForm']);
 Route::post('/contact', [ContactFormController::class, 'contactForm'])->name('contact.store');

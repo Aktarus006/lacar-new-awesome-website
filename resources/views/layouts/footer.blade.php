@@ -12,7 +12,7 @@
     <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="space-y-8 xl:col-span-1">
-                <img class="h-10" src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg" alt="Company name">
+                <img class="h-10" src="{{ asset('images/lacar-logo-white.png') }}" alt="Company name">
                 <p class="text-base text-gray-500">
                     Making the world a better place through constructing elegant hierarchies.
                 </p>

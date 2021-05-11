@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateFormat extends Migration
+class CreateFormatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -30,6 +30,6 @@ class CreateFormat extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('format');
+        Schema::dropIfExists('formats');
     }
 }

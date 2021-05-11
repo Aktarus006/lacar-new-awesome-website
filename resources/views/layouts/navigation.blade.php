@@ -414,7 +414,7 @@
                 <a href="/software" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
                     Software
                 </a>
-                <a href="#" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+                <a href="/restricted" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
                     Restricted Area
                 </a>
                 <a href="/services" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">

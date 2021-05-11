@@ -1,4 +1,8 @@
 @extends('master')
 @section('content')
-<h1>Yallah</h1>
+@foreach ($documents as $doc)
+<a class="primary-btn" href="{{route('downloadFile',$doc->id)}}">Download Resume </a>
+@endforeach
+
+
 @endsection

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\LoginController;
 use App\Models\Category;
 use App\Models\Kit;
@@ -40,9 +41,7 @@ Route::get('/solutions', function () {
     return view('layouts.pages.solutions');
 });
 
-Route::get('/restricted', ['middleware' => 'littlegatekeeper', function () {
-    return view('layouts.pages.restrictedAreaIndex');
-}]);
+Route::get('/restricted', [LoginController::class, 'restricted'])->middleware('littlegatekeeper');
 
 
 Route::get('/login', [LoginController::class, 'createForm']);
@@ -50,6 +49,9 @@ Route::post('/login', [LoginController::class, 'login'])->name('login');
 
 Route::get('/contact', [ContactFormController::class, 'createForm']);
 Route::post('/contact', [ContactFormController::class, 'contactForm'])->name('contact.store');
+
+Route::get('/file/{id}', [DocumentController::class, 'show'])->name('downloadFile');
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

@@ -13,8 +13,9 @@ class LoginController extends Controller
     }
     public function restricted()
     {
-        $documents = \App\Models\Document::all();
-        return view('layouts.pages.restrictedAreaIndex', compact('documents'));
+        $iso = Document::where('type', 1);
+        $instructions = Document::where('type', 2);
+        return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions'));
     }
 
     public function createForm()

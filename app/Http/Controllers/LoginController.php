@@ -15,7 +15,11 @@ class LoginController extends Controller
     {
         $isos = Document::where('type', 1)->get();
         $instructions = Document::where('type', 2)->get();
-        return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions'));
+        $ces = Document::where('type', 3)->get();
+        $sds = Document::where('type', 4)->get();
+        $flyers = Document::where('type', 5)->get();
+
+        return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions', 'ces', 'sds', 'flyers'));
     }
 
     public function createForm()

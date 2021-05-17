@@ -13,7 +13,7 @@ class LoginController extends Controller
     }
     public function restricted()
     {
-        $iso = Document::where('type', 1);
+        $isos = Document::where('type', 1);
         $instructions = Document::where('type', 2);
         return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions'));
     }

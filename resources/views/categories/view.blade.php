@@ -1,51 +1,28 @@
 @extends('master')
 
 @section('content')
-<div class="pb-20 bg-gradient-to-b from-white to-gray-50">
-    <div class="relative flex items-center w-screen pt-10 ">
-        <h1 class="mx-auto text-lg font-extrabold md:text-4xl">{{ $category->name }}</h1>
+
+<div class="relative w-full bg-gray-800">
+    <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img class="object-cover w-full h-full" src="{{ asset('storage/'.$category->image) }}" alt="">
     </div>
-    <div class="relative w-24 mx-auto mt-5 mb-5 bg-yellow-500">
-        <div class="px-3 py-0.5 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
+        <h1 class="text-2xl font-extrabold text-yellow-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">{{ $category->name
+            }}</h1>
+        <div class="mt-2 md:ml-auto md:w-1/2 md:pl-10">
+            <h2 class="text-base font-semibold tracking-wider text-gray-300 uppercase">
+                Genetic Thrombosis
+            </h2>
+            <p class="mt-2 text-xl font-bold tracking-tight text-white sm:text-2xl">
+                Fast and easy detection
+            </p>
+            <p class="mt-3 text-lg text-gray-300">
+                {{ strip_tags(html_entity_decode($category->description)) }}
+            </p>
+
         </div>
     </div>
 </div>
-<div class="bg-white lg:pb-24">
-    <div class="pb-16 from-gray-900 to-indigo-600 lg:pb-0 lg:z-10 lg:relative bg-gradient-to-br">
-        <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-4 lg:gap-8">
-            <div class="relative lg:-my-8 lg:col-span-2">
-                <div aria-hidden="true" class="absolute inset-x-0 top-0 bg-white h-1/2 lg:hidden"></div>
-                <div class="max-w-md px-4 mx-auto sm:max-w-4xl sm:px-6 lg:p-0 lg:h-full ">
-                    <div
-                        class="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:h-full lg:w-full">
-                        <img class="object-fill" src=" {{ asset('storage/'.$category->image) }}" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-                <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-                    <blockquote>
-                        <div>
-
-                            <div class="text-xl text-gray-300 uppercase font-base">GENETIC THROMBOSIS</div>
-                            <div class="text-4xl font-semibold text-white">FAST AND EASY DETECTION</div>
-                            <div class="relative w-16 mt-5 mb-5 bg-yellow-500">
-                                <div class="px-3 py-0.5 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                                </div>
-                            </div>
-                            <div class="mt-6 text-xl text-indigo-100">
-                                {{ strip_tags(html_entity_decode($category->description)) }}
-                            </div>
-                        </div>
-
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
 
 <div class="px-4 pt-16 pb-20 bg-white sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
     <div class="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">

@@ -1,6 +1,6 @@
 @extends('master')
 @section('meta')
-<title>Wlecome | Lacar-MDX</title>
+<title>Welcome | Lacar-MDX</title>
 @endsection
 
 

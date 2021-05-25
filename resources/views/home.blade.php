@@ -22,188 +22,113 @@
             </div>
 
             <!-- Blog section -->
-            <div
-                class="relative py-16 transition duration-500 ease-in-out transform cursor-pointer bg-gray-50 sm:py-24 lg:py-32 hover:scale-105">
+            <div class="relative py-16 bg-gray-50 sm:py-24 lg:py-32">
                 <div class="relative">
                     <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-                        <h2 class="text-base font-semibold tracking-wider uppercase text-cyan-600">Learn</h2>
+                        <h2 class="text-base font-semibold tracking-wider uppercase text-cyan-600">Products & services
+                        </h2>
                         <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                            Helpful Resources
+                            For routine genetic testing
                         </p>
-                        <p class="mx-auto mt-5 text-xl text-gray-500 max-w-prose">
-                            Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc,
-                            ullamcorper malesuada. Eleifend condimentum id viverra nullo.
-                        </p>
+
                     </div>
                     <div
-                        class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                        class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-4 lg:max-w-7xl">
+                        <div
+                            class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg hover:scale-105">
                             <div class="flex-shrink-0">
                                 <img class="object-cover w-full h-48"
-                                    src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                    src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxzb2Z0d2FyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                                 <div class="flex-1">
-                                    <p class="text-sm font-medium text-cyan-600">
-                                        <a href="#" class="hover:underline">
-                                            Article
-                                        </a>
-                                    </p>
-                                    <a href="#" class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">
-                                            Boost your conversion rate
+                                    <a href="/software" class="block mt-2 cursor-pointer">
+                                        <p class="text-xl font-semibold text-gray-900 hover:underline">
+                                            Software
                                         </p>
                                         <p class="mt-3 text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                                            accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos
-                                            quis dolorum.
+                                            The perfect solution to automatically interpret your result from any qPCR
+                                            machine.
                                         </p>
                                     </a>
                                 </div>
-                                <div class="flex items-center mt-6">
-                                    <div class="flex-shrink-0">
-                                        <a href="#">
-                                            <span class="sr-only">Roel Aufderehar</span>
-                                            <img class="w-10 h-10 rounded-full"
-                                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm font-medium text-gray-900">
-                                            <a href="#" class="hover:underline">
-                                                Roel Aufderehar
-                                            </a>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
+                            <div class="flex-shrink-0">
+                                <img class="object-cover w-full h-48"
+                                    src="https://images.unsplash.com/photo-1576156650572-91dc9f7b8f19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGxhYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+                                    alt="">
+                            </div>
+                            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                                <div class="flex-1">
+                                    <a href="/services" class="block mt-2">
+                                        <p class="text-xl font-semibold text-gray-900 hover:underline">
+                                            Services
                                         </p>
-                                        <div class="flex space-x-1 text-sm text-gray-500">
-                                            <time datetime="2020-03-16">
-                                                Mar 16, 2020
-                                            </time>
-                                            <span aria-hidden="true">
-                                                &middot;
-                                            </span>
-                                            <span>
-                                                6 min read
-                                            </span>
-                                        </div>
-                                    </div>
+                                        <p class="mt-3 text-base text-gray-500">
+                                            The perfect solution to get customized constitutional genetic assays on
+                                            demand.
+                                        </p>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
+                            <div class="flex-shrink-0">
+                                <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGxhYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+" alt="">
+                            </div>
+                            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
+                                <div class="flex-1">
+                                    <a href="#" class="block mt-2">
+                                        <p class="text-xl font-semibold text-gray-900 hover:underline">
+                                            Kits & Consumables
+                                        </p>
+                                        <p class="mt-3 text-base text-gray-500">
+                                            The perfect solution to get any routine SNP directly from the primary sample
+                                            with a CE-IVD solution.
+                                        </p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                        <div
+                            class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
                             <div class="flex-shrink-0">
                                 <img class="object-cover w-full h-48"
-                                    src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+                                    src="https://images.unsplash.com/photo-1579154392429-0e6b4e850ad2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGNyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
                                     alt="">
                             </div>
                             <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                                 <div class="flex-1">
-                                    <p class="text-sm font-medium text-cyan-600">
-                                        <a href="#" class="hover:underline">
-                                            Video
-                                        </a>
-                                    </p>
                                     <a href="#" class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">
-                                            How to use search engine optimization to drive sales
+                                        <p class="text-xl font-semibold text-gray-900 hover:underline">
+                                            Solutions
                                         </p>
                                         <p class="mt-3 text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis
-                                            asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut
-                                            inventore optio animi., tempore temporibus quo laudantium.
+                                            The perfect solution to handle low-medium amount of samples in a short time
+                                            with LC-GENIE III, ease-up your routine genetic testing flow with qPCR
+                                            platform and medium to very high throughput with a fully CE-IVD
+                                            plug-and-play solution at a reasonable price with automated system.
                                         </p>
                                     </a>
-                                </div>
-                                <div class="flex items-center mt-6">
-                                    <div class="flex-shrink-0">
-                                        <a href="#">
-                                            <span class="sr-only">Brenna Goyette</span>
-                                            <img class="w-10 h-10 rounded-full"
-                                                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm font-medium text-gray-900">
-                                            <a href="#" class="hover:underline">
-                                                Brenna Goyette
-                                            </a>
-                                        </p>
-                                        <div class="flex space-x-1 text-sm text-gray-500">
-                                            <time datetime="2020-03-10">
-                                                Mar 10, 2020
-                                            </time>
-                                            <span aria-hidden="true">
-                                                &middot;
-                                            </span>
-                                            <span>
-                                                4 min read
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                            <div class="flex-shrink-0">
-                                <img class="object-cover w-full h-48"
-                                    src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                                    alt="">
-                            </div>
-                            <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                                <div class="flex-1">
-                                    <p class="text-sm font-medium text-cyan-600">
-                                        <a href="#" class="hover:underline">
-                                            Case Study
-                                        </a>
-                                    </p>
-                                    <a href="#" class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">
-                                            Improve your customer experience
-                                        </p>
-                                        <p class="mt-3 text-base text-gray-500">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum
-                                            voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi
-                                            cumque corporis perferendis hic.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="flex items-center mt-6">
-                                    <div class="flex-shrink-0">
-                                        <a href="#">
-                                            <span class="sr-only">Daniela Metz</span>
-                                            <img class="w-10 h-10 rounded-full"
-                                                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                                alt="">
-                                        </a>
-                                    </div>
-                                    <div class="ml-3">
-                                        <p class="text-sm font-medium text-gray-900">
-                                            <a href="#" class="hover:underline">
-                                                Daniela Metz
-                                            </a>
-                                        </p>
-                                        <div class="flex space-x-1 text-sm text-gray-500">
-                                            <time datetime="2020-02-12">
-                                                Feb 12, 2020
-                                            </time>
-                                            <span aria-hidden="true">
-                                                &middot;
-                                            </span>
-                                            <span>
-                                                11 min read
-                                            </span>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
             <!-- CTA Section -->
             <div class="relative bg-gray-900">
@@ -218,7 +143,7 @@
                     class="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
                     <div class="md:ml-auto md:w-1/2 md:pl-10">
                         <h2 class="text-base font-semibold tracking-wider text-gray-300 uppercase">
-                            Award winning support
+                            Feel free to ask
                         </h2>
                         <p class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                             We’re here to help
@@ -230,9 +155,9 @@
                         </p>
                         <div class="mt-8">
                             <div class="inline-flex rounded-md shadow">
-                                <a href="#"
+                                <a href="/contact"
                                     class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-gray-900 bg-white border border-transparent rounded-md hover:bg-gray-50">
-                                    Visit the help center
+                                    Contact us
                                     <!-- Heroicon name: solid/external-link -->
                                     <svg class="w-5 h-5 ml-3 -mr-1 text-gray-400" xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

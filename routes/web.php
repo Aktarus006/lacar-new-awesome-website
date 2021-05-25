@@ -52,6 +52,10 @@ Route::post('/contact', [ContactFormController::class, 'contactForm'])->name('co
 
 Route::get('/file/{id}', [DocumentController::class, 'show'])->name('downloadFile');
 
+Route::get('/admin/usefuldocs', function () {
+    return view('layouts.usefuldocs');
+});
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

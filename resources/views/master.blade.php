@@ -8,6 +8,7 @@
 <body class="">
 
     @include('layouts.navigation')
+
     <div class="mt-24">
         @yield('content')
         @include('layouts.footer')

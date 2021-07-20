@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-    {{ Breadcrumbs::render('category', $category) }}
+
     <div class="relative w-full bg-gray-800">
         <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img class="object-cover w-full h-full" src="{{ asset('storage/' . $category->image) }}" alt="">

@@ -5,7 +5,6 @@
 
 
 @section('content')
-    {{ Breadcrumbs::render('home') }}
     <div class="bg-white">
         <div class="relative overflow-hidden">
             <main>
@@ -85,7 +84,7 @@
                                 class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
                                 <div class="flex-shrink-0">
                                     <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGxhYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
-        " alt="">
+            " alt="">
                                 </div>
                                 <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                                     <div class="flex-1">

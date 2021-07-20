@@ -21,7 +21,7 @@ use TCG\Voyager\Facades\Voyager;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 // Kits route
 Route::get('/p/{kit:slug}', function (Kit $kit) {
@@ -65,4 +65,4 @@ Route::group(['prefix' => 'admin'], function () {
 // Categories
 Route::get('/{category:slug}', function (Category $category) {
     return view('categories.view', ['category' => $category]);
-});
+})->name('category');

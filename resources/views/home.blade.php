@@ -34,96 +34,9 @@
                         </div>
                         <div
                             class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-4 lg:max-w-7xl">
-                            <div
-                                class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg hover:scale-105">
-                                <div class="flex-shrink-0">
-                                    <img class="object-cover w-full h-48"
-                                        src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxzb2Z0d2FyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
-                                        alt="">
-                                </div>
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div class="flex-1">
-                                        <a href="/software" class="block mt-2 cursor-pointer">
-                                            <p class="text-xl font-semibold text-gray-900 hover:underline">
-                                                Software
-                                            </p>
-                                            <p class="mt-3 text-base text-gray-500">
-                                                The perfect solution to automatically interpret your result from any qPCR
-                                                machine.
-                                            </p>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
-                                <div class="flex-shrink-0">
-                                    <img class="object-cover w-full h-48"
-                                        src="https://images.unsplash.com/photo-1576156650572-91dc9f7b8f19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fGxhYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                                        alt="">
-                                </div>
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div class="flex-1">
-                                        <a href="/services" class="block mt-2">
-                                            <p class="text-xl font-semibold text-gray-900 hover:underline">
-                                                Services
-                                            </p>
-                                            <p class="mt-3 text-base text-gray-500">
-                                                The perfect solution to get customized constitutional genetic assays on
-                                                demand.
-                                            </p>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
-                                <div class="flex-shrink-0">
-                                    <img class="object-cover w-full h-48" src="https://images.unsplash.com/photo-1606206591513-adbfbdd7a177?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGxhYnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
-            " alt="">
-                                </div>
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div class="flex-1">
-                                        <a href="#" class="block mt-2">
-                                            <p class="text-xl font-semibold text-gray-900 hover:underline">
-                                                Kits & Consumables
-                                            </p>
-                                            <p class="mt-3 text-base text-gray-500">
-                                                The perfect solution to get any routine SNP directly from the primary sample
-                                                with a CE-IVD solution.
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex flex-col overflow-hidden transition duration-500 ease-in-out transform rounded-lg shadow-lg cursor-pointer hover:scale-105">
-                                <div class="flex-shrink-0">
-                                    <img class="object-cover w-full h-48"
-                                        src="https://images.unsplash.com/photo-1579154392429-0e6b4e850ad2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGNyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                                        alt="">
-                                </div>
-                                <div class="flex flex-col justify-between flex-1 p-6 bg-white">
-                                    <div class="flex-1">
-                                        <a href="#" class="block mt-2">
-                                            <p class="text-xl font-semibold text-gray-900 hover:underline">
-                                                Solutions
-                                            </p>
-                                            <p class="mt-3 text-base text-gray-500">
-                                                The perfect solution to handle low-medium amount of samples in a short time
-                                                with LC-GENIE III, ease-up your routine genetic testing flow with qPCR
-                                                platform and medium to very high throughput with a fully CE-IVD
-                                                plug-and-play solution at a reasonable price with automated system.
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            @foreach ($categories as $category)
+                                <x-home-category-box :category="$category" />
+                            @endforeach
                         </div>
                     </div>
                 </div>

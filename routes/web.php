@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PageController;
 use App\Models\Category;
 use App\Models\Kit;
 use Illuminate\Support\Facades\Route;
@@ -19,9 +20,7 @@ use TCG\Voyager\Facades\Voyager;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
 
 // Kits route
 Route::get('/p/{kit:slug}', function (Kit $kit) {

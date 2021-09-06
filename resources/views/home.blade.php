@@ -41,6 +41,10 @@
                     </div>
                 </div>
 
+                <!-- team section -->
+
+                <x-team-list :teams="$teams" />
+
 
 
                 <!-- CTA Section -->

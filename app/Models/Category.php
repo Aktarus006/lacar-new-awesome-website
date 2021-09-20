@@ -9,6 +9,6 @@ class Category extends Model
 {
     public function kits()
     {
-        return $this->belongsToMany(Kit::class);
+        return $this->belongsToMany(Kit::class, 'category_kit');
     }
 }

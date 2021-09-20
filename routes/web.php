@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\KitController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
 use App\Models\Category;
@@ -23,9 +24,7 @@ use TCG\Voyager\Facades\Voyager;
 Route::get('/', [PageController::class, 'index'])->name('home');
 
 // Kits route
-Route::get('/p/{kit:slug}', function (Kit $kit) {
-    return view('kits.view', ['kit' => $kit]);
-});
+Route::get('/p/{kit:slug}', [KitController::class, 'show'])->name('kit');
 
 // Pages
 Route::get('/software', function () {

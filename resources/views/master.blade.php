@@ -15,5 +15,6 @@
     </div>
 </body>
 
+<script src="https://unpkg.com/@markusantonwolf/ta-gallery@latest/dist/js/ta-gallery-next.min.js"></script>
 
 </html>

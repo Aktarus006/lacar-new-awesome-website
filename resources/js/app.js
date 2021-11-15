@@ -1,3 +1,7 @@
-require('./bootstrap');
-import 'alpine-magic-helpers';
-import 'alpinejs';
+require("./bootstrap");
+
+import Alpine from "alpinejs";
+
+window.Alpine = Alpine;
+
+Alpine.start();

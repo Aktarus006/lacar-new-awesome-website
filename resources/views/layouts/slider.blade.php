@@ -1,5 +1,5 @@
-<div class="mb-8 h-96 ta-gallery ta-gallery-size" x-data="taGallery" x-init="init()" data-start="0" autoplay
-    data-timing="ease-in-out" data-duration="0.2s">
+<div class="mb-8 h-96 ta-gallery ta-gallery-size" x-data="taGallery" x-init="init()" data-start="0"
+    data-timing="ease-in-out" data-duration="0.4s" data-autoplay="true" data-interval="8000" pauseonhover="true">
     <!--- START SLIDES /-->
     <div class="flex flex-col items-center justify-center px-12 py-8 overflow-hidden bg-cover bg-home-banner-1 ta-gallery-element ta-gallery-anim-scroll flex-center bg-opacity-95 bg-blur-1 sm:px-24 sm:py-12"
         x-cloak>
@@ -15,7 +15,7 @@
     <div class="flex flex-col items-center justify-center px-12 py-8 overflow-hidden bg-cover bg-home-banner-2 ta-gallery-element ta-gallery-anim-scroll flex-center bg-opacity-95 bg-blur-1 sm:px-24 sm:py-12"
         x-cloak>
         <div class="text-base font-semibold leading-relaxed text-center text-gray-900 sm:text-xl">
-            <h2 class="text-2xl font-bold text-white sm:text-4xl text-shadow-lg">
+            <h2 class="text-3xl font-bold text-white sm:text-4xl text-shadow-lg">
                 COVID-19: Our Solutions
             </h2>
             <h3 class="m-5 text-xl font-semibold leading-normal text-white sm:text-xl text-shadow-lg">

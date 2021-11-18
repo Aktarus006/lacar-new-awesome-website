@@ -18,6 +18,8 @@ class LoginController extends Controller
         $ces = Document::where('type', 3)->get();
         $sds = Document::where('type', 4)->get();
         $flyers = Document::where('type', 5)->get();
+        $profiles = Document::where('type', 6)->get();
+        $standards = Document::where('type', 7)->get();
 
         return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions', 'ces', 'sds', 'flyers'));
     }

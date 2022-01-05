@@ -21,7 +21,7 @@ class LoginController extends Controller
         $profiles = Document::where('type', 6)->get();
         $standards = Document::where('type', 7)->get();
 
-        return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions', 'ces', 'sds', 'flyers'));
+        return view('layouts.pages.restrictedAreaIndex', compact('isos', 'instructions', 'ces', 'sds', 'flyers', 'profiles', 'standards'));
     }
 
     public function createForm()

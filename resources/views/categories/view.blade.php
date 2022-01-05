@@ -5,7 +5,7 @@
 
     <div class="relative w-full bg-gray-800">
         <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-            <img class="object-cover w-full h-full" src="{{ asset('storage/' . $category->image) }}" alt="">
+            <img class="object-cover w-full h-full" src="{{ asset(Voyager::image($category->image)) }}" alt="">
         </div>
         <div class="relative px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
             <h1 class="text-2xl font-extrabold text-yellow-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">

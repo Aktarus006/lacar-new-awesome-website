@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
     <header
-        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-center bg-no-repeat bg-auto sm:bg-cover bg-opacity-70 h-1/4 sm:h-2/3 bg-services">
+        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-bottom bg-no-repeat bg-auto sm:bg-cover bg-opacity-70 h-1/4 sm:h-2/3 bg-services">
 
         <div class="text-center">
             <h1 class="p-5 text-lg font-bold text-white uppercase sm:text-7xl text-shadow-lg">

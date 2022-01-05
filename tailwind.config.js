@@ -18,11 +18,11 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
-        "home-banner-1": "url('https://lacar-mdx.com/images/home-banner.jpg')",
+        "home-banner-1": "url('/images/lacar-51.jpg')",
         "home-banner-2":
           "url('https://lacar-mdx.com/images/home-banner-2.jpg')",
-        software: "url('/images/software-banner.jpg')",
-        services: "url('/images/services-banner.jpg')",
+        software: "url('/images/lacar-36.jpg')",
+        services: "url('/images/lacar-10.jpg')",
         solutions: "url('/images/solutions-banner.jpg')",
       }),
     },

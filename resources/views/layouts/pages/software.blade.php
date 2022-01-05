@@ -2,7 +2,7 @@
 
 @section('content')
     <header
-        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-center bg-no-repeat bg-contain bg-opacity-70 h-1/4 sm:h-2/3 bg-software">
+        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-center bg-no-repeat bg-cover bg-opacity-70 h-1/4 sm:h-2/3 bg-software">
 
         <div class="text-center">
             <h1 class="p-5 text-lg font-bold text-white sm:text-7xl text-shadow-lg">

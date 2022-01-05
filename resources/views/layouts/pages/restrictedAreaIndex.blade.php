@@ -22,12 +22,12 @@
             <x-documents-list :documents="$flyers"></x-documents-list>
         @endif
         @if ($profiles->count() > 0)
-            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Flyers</h1>
-            <x-documents-list :documents="$flyers"></x-documents-list>
+            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Profiles</h1>
+            <x-documents-list :documents="$profiles"></x-documents-list>
         @endif
         @if ($standards->count() > 0)
-            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Flyers</h1>
-            <x-documents-list :documents="$flyers"></x-documents-list>
+            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Standards</h1>
+            <x-documents-list :documents="$standards"></x-documents-list>
         @endif
 
     </div>

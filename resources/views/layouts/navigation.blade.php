@@ -51,14 +51,14 @@
                                     <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                         <!-- Heroicon name: outline/chart-bar -->
                                         @foreach ($covid->kits as $kit)
+                                            <div class="ml-4">
+                                                <p class="text-base font-light text-gray-900">
+                                                    {{ $kit->name }}
+                                                </p>
 
+                                            </div>
                                         @endforeach
-                                        <div class="ml-4">
-                                            <p class="text-base font-light text-gray-900">
-                                                {{ $kit->name }}
-                                            </p>
 
-                                        </div>
                                     </a>
 
                                     <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">

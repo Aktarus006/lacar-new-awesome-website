@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         //
         View::composer('*', function ($view) {
             $categories = Category::orderBy('id')->where('slug', '!=', 'covid')->get();
-            $covid =Category::where('slug', '=', 'covid')->get();
+            $covid =Category::where('slug', 'covid')->firstOrFail();
 
             $view->with('categories', $categories)
             ->with('covid', $covid);

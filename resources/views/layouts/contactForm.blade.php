@@ -9,13 +9,11 @@
         <div class="lg:pr-8">
             <div class="max-w-md mx-auto sm:max-w-lg lg:mx-0">
                 <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">
-                    Let's work together
+                    {{ $title }}
                 </h2>
 
                 <p class="mt-4 text-lg text-gray-500 sm:mt-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque quidem voluptatibus
-                    explicabo ipsa maxime, ullam neque hic, nisi commodi aspernatur iure nostrum rerum temporibus quasi
-                    eum quos laboriosam veniam?
+                    {{ $description }}
                 </p>
 
                 @if ($success = session('success'))

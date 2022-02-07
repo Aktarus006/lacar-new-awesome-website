@@ -40,7 +40,7 @@
               From: "opacity-100 translate-y-0"
               To: "opacity-0 translate-y-1"
           -->
-                        <div x-show="isOpen" @mouseleave="isOpen = false"
+                        <div x-show="isOpen" @mouseleave="isOpen = false" x-cloak
                             x-transition:enter="transition ease-out duration-50 transform"
                             x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-50 transform"
@@ -337,7 +337,7 @@
               From: "opacity-100 translate-y-0"
               To: "opacity-0 translate-y-1"
           -->
-                        <div x-show="isOpen" @mouseleave="isOpen = false"
+                        <div x-show="isOpen" @mouseleave="isOpen = false" x-cloak
                             x-transition:enter="transition ease-out duration-50 transform"
                             x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-50 transform"

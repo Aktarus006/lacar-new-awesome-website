@@ -64,9 +64,8 @@
                                 We’re here to help
                             </p>
                             <p class="mt-3 text-lg text-gray-300">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam
-                                sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat
-                                quisque ut interdum tincidunt duis.
+                                You have a question regarding our products ? You want to know more about our method ?
+                                Fill in the form and we’ll get back to you as soon as possible.
                             </p>
                             <div class="mt-8">
                                 <div class="inline-flex rounded-md shadow">

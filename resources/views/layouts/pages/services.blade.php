@@ -22,5 +22,6 @@
                 assays</span> on demand. Feel free
             to <span class="font-bold">contact us</span> for more information</p>
     </div>
-    @include('layouts.contactForm', ['subject' => 'Services'])
+    @include('layouts.contactForm', ['subject' => 'Services', 'description' => 'You need to develop any SNP assay ? Don’t
+    hesitate to contact us. We’ll do anything we can to help you.', 'title' => 'Let’s work together'])
 @endsection

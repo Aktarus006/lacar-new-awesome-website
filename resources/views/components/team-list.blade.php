@@ -6,8 +6,10 @@
         <div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
             <div class="space-y-5 sm:space-y-4">
                 <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet our team</h2>
-                <p class="text-xl text-gray-500">Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-                    elementum enim vitae ullamcorper suspendisse. Vivamus fringilla.</p>
+                <p class="text-xl text-gray-500">Our sales team is always available to help you ! Find the salesperson in
+                    charge of your region right here.
+
+                </p>
             </div>
             <div class="lg:col-span-2">
                 <ul role="list" class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-12 sm:space-y-0 lg:gap-x-8">

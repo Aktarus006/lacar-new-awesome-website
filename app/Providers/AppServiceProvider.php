@@ -30,8 +30,8 @@ class AppServiceProvider extends ServiceProvider
             $categories = Category::orderBy('id')->where('slug', '!=', 'covid')->get();
             $covid =Category::where('slug', '=', 'covid')->get();
 
-            $view->with('categories', $categories);
-            $view->with('covid', $covid);
+            $view->with('categories', $categories)
+            ->with('covid', $covid);
         });
     }
 }

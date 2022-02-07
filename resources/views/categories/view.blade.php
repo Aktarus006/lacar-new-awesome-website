@@ -243,11 +243,6 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Article
-                                </a>
-                            </p>
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     LC-GENIE III
@@ -257,34 +252,6 @@
                                     qPCR platforms with a fully CE-IVD solution from the primary tube to the end results
                                 </p>
                             </a>
-                        </div>
-                        <div class="flex items-center mt-6">
-                            <div class="flex-shrink-0">
-                                <a href="#">
-                                    <span class="sr-only">Roel Aufderehar</span>
-                                    <img class="w-10 h-10 rounded-full"
-                                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">
-                                    <a href="#" class="hover:underline">
-                                        Roel Aufderehar
-                                    </a>
-                                </p>
-                                <div class="flex space-x-1 text-sm text-gray-500">
-                                    <time datetime="2020-03-16">
-                                        Mar 16, 2020
-                                    </time>
-                                    <span aria-hidden="true">
-                                        &middot;
-                                    </span>
-                                    <span>
-                                        6 min read
-                                    </span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,11 +264,7 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Video
-                                </a>
-                            </p>
+
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     qPCR PLATFORMS
@@ -312,34 +275,7 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="flex items-center mt-6">
-                            <div class="flex-shrink-0">
-                                <a href="#">
-                                    <span class="sr-only">Brenna Goyette</span>
-                                    <img class="w-10 h-10 rounded-full"
-                                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">
-                                    <a href="#" class="hover:underline">
-                                        Brenna Goyette
-                                    </a>
-                                </p>
-                                <div class="flex space-x-1 text-sm text-gray-500">
-                                    <time datetime="2020-03-10">
-                                        Mar 10, 2020
-                                    </time>
-                                    <span aria-hidden="true">
-                                        &middot;
-                                    </span>
-                                    <span>
-                                        4 min read
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
@@ -351,11 +287,7 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Case Study
-                                </a>
-                            </p>
+
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     AUTOMATISATION
@@ -366,38 +298,10 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="flex items-center mt-6">
-                            <div class="flex-shrink-0">
-                                <a href="#">
-                                    <span class="sr-only">Daniela Metz</span>
-                                    <img class="w-10 h-10 rounded-full"
-                                        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                        alt="">
-                                </a>
-                            </div>
-                            <div class="ml-3">
-                                <p class="text-sm font-medium text-gray-900">
-                                    <a href="#" class="hover:underline">
-                                        Daniela Metz
-                                    </a>
-                                </p>
-                                <div class="flex space-x-1 text-sm text-gray-500">
-                                    <time datetime="2020-02-12">
-                                        Feb 12, 2020
-                                    </time>
-                                    <span aria-hidden="true">
-                                        &middot;
-                                    </span>
-                                    <span>
-                                        11 min read
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @include('layouts.contactForm', ['subject' => 'COVID'])
+    {{-- @include('layouts.contactForm', ['subject' => 'COVID']) --}}
 @endsection

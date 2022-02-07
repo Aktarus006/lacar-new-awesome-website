@@ -28,7 +28,7 @@ Route::get('/p/{kit:slug}', [KitController::class, 'show'])->name('kit');
 
 // Pages
 Route::get('/jobs', function () {
-    return view('layouts.pages.jobs');
+    return view('jobs.index');
 });
 Route::get('/software', function () {
     return view('layouts.pages.software');

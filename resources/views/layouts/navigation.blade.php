@@ -15,7 +15,7 @@
                         <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                         <button type="button"
                             class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                            <span>Covid-19</span>
+                            <span>{{ $covid->name }}</span>
                             <!--
               Heroicon name: solid/chevron-down
 
@@ -50,10 +50,12 @@
                                 <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                     <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
                                         <!-- Heroicon name: outline/chart-bar -->
+                                        @foreach ($covid->kits as $kit)
 
+                                        @endforeach
                                         <div class="ml-4">
                                             <p class="text-base font-light text-gray-900">
-                                                From nasopharyngeal Swab
+                                                {{ $kit->name }}
                                             </p>
 
                                         </div>

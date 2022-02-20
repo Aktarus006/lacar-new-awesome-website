@@ -1,4 +1,4 @@
-<div class="mb-8 h-96 ta-gallery ta-gallery-size" x-data="taGallery" x-init="init()" data-start="0"
+<div class="mb-8 bg-gray-800 h-96 ta-gallery ta-gallery-size" x-data="taGallery" x-init="init()" data-start="0"
     data-timing="ease-in-out" data-duration="0.4s" data-autoplay="true" data-interval="8000" pauseonhover="true">
     <!--- START SLIDES /-->
     <div class="flex flex-col items-center justify-center px-12 py-8 overflow-hidden bg-center bg-cover bg-home-banner-1 ta-gallery-element ta-gallery-anim-scroll flex-center bg-opacity-95 bg-blur-1 sm:px-24 sm:py-12"

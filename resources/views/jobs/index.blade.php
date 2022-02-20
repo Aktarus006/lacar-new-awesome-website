@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="relative flex items-center justify-center shadow-lg h-2/3">
-        <img class="absolute bottom-0 object-cover object-top w-full h-full -top-24" src="/images/lacar-team.jpg" />
+        <img class="absolute bottom-0 object-cover object-top w-full h-full" src="/images/lacar-team.jpg" />
 
         <div class="absolute text-center">
             <h1 class="p-5 text-lg font-bold text-white sm:text-7xl text-shadow-lg">

@@ -13,7 +13,7 @@
                         @include('layouts.slider')
                     </div>
                 </div>
-                <div class="relative bg-white">
+                <div class="relative hidden bg-white lg:block">
                     <div class="sticky rounded-full top-8 aspect-h-8 sm:aspect-w-16 sm:aspect-h-4">
                         <video autoplay muted loop controls>
                             <source src="https://lacar-mdx.com/files\LaCAR Marketing">

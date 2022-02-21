@@ -117,27 +117,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative h-full" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
+                <div class="h-full" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
                     @click.away="isOpen = false" x-data="{isOpen : false}">
-                    <div @click="isOpen = !isOpen" class="relative h-full">
-                        <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                        <button type="button"
-                            class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                            <span>Kits</span>
-                            <!--
+                    <div @click="isOpen = !isOpen" class="h-full">
+                        <a href="/kits">
+                            <!-- Item active: "text-gray-900" , Item inactive: "text-gray-500" -->
+                            <button type="button"
+                                class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                                <span>Kits</span>
+                                <!--
               Heroicon name: solid/chevron-down
 
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
-                            <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
+                                <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
                         <!--
             'More' flyout menu, show/hide based on flyout menu state.
 
@@ -153,26 +154,28 @@
                             x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-50 transform"
                             x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-                            class="absolute z-10 w-screen max-w-md px-2 pt-3 transform -translate-x-1/2 left-1/2 sm:px-0">
-                            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                                <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
+                            class="absolute left-0 z-10 w-screen px-2 transform sm:px-0">
+                            <div class="shadow-lg">
+                                <div
+                                    class="flex flex-row items-center h-12 gap-4 px-2 mt-10 bg-gray-800 bg-opacity-90 sm:gap-8 sm:p-8">
                                     @foreach ($categories as $category)
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
-                                            x-on:mouseleave="isSubOpen=false">
-                                            <div class="p-2 rounded-md hover:bg-gray-50">
+                                            x-on:mouseleave="isSubOpen=false" class="">
+                                            <div class="relative p-4 rounded-md hover:bg-yellow-500">
                                                 <a href="/{{ $category->slug }}"
-                                                    class="text-red-300 ">{{ $category->name }}</a>
-                                            </div>
-                                            @if ($category->kits->count() > 0)
-                                                <div x-show="isSubOpen" class="p-3 mt-4 -m-3 space-y-4">
-                                                    @foreach ($category->kits as $kit)
-                                                        <div
-                                                            class="px-2 py-4 ml-2 border-l-2 rounded-lg hover:border-yellow-500">
-                                                            <a href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            @endisset
+                                                    class="text-white">{{ $category->name }}</a>
+                                                @if ($category->kits->count() > 0)
+                                                    <div x-show="isSubOpen"
+                                                        class="absolute top-0 left-0 p-3 mt-12 space-y-2 bg-gray-50 rounded-b-md">
+                                                        @foreach ($category->kits as $kit)
+                                                            <div class="w-screen text-red-300">
+                                                                <a href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
+                                                            </div>
+                                                        @endforeach
+                                                    </div>
+                                                @endisset
+                                        </div>
+
                                     </div>
                                 @endforeach
                             </div>
@@ -235,15 +238,19 @@
     <div class="py-0.5 mt-3 mx-auto sm:mt-1">
     </div>
 </div>
+<div class="w-screen h-12 bg-gray-800" x-show="isOpen" @mouseleave="isOpen = false" x-cloak
+    x-transition:enter="transition ease-out duration-50 transform" x-transition:enter-start="opacity-0 scale-95"
+    x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-50 transform"
+    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"></div>
 <!--
 Mobile menu, show/hide based on mobile menu state.
 
 Entering: "duration-200 ease-out"
-  From: "opacity-0 scale-95"
-  To: "opacity-100 scale-100"
+From: "opacity-0 scale-95"
+To: "opacity-100 scale-100"
 Leaving: "duration-100 ease-in"
-  From: "opacity-100 scale-100"
-  To: "opacity-0 scale-95"
+From: "opacity-100 scale-100"
+To: "opacity-0 scale-95"
 -->
 <div x-data="{ isOpen : false }" x-show="isOpen"
     @open-dropdown.window="if ($event.detail.id == 'mobile-menu') isOpen = true;"

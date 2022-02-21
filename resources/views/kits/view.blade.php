@@ -45,7 +45,10 @@
             <p class="mt-12 text-lg text-gray-600">{{ strip_tags(html_entity_decode($kit->disease_information)) }}</p>
         </div>
 
+
     </div>
+    @include('layouts.contactForm', ['subject' => 'Request for : '.$kit->name, 'description' => 'Feel free to
+    contact us !', 'title' => 'Want to know more about '.$kit->name.' ?'])
 
 
 @endsection

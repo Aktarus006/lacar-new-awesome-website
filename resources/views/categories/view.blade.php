@@ -305,5 +305,6 @@
             </div>
         </div>
     </div>
-    {{-- @include('layouts.contactForm', ['subject' => 'COVID']) --}}
+    @include('layouts.contactForm', ['subject' => 'Request for : '.$category->name, 'description' => 'Feel free to
+    contact us !', 'title' => 'Want to know more about '.$category->name.'?']])
 @endsection

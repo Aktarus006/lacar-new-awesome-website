@@ -34,7 +34,7 @@
                         </div>
                         <div
                             class="grid max-w-md gap-8 px-4 mx-auto mt-12 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-4 lg:max-w-7xl">
-                            @foreach ($categories as $category)
+                            @foreach ($cat as $category)
                                 <x-home-category-box :category="$category" />
                             @endforeach
                         </div>

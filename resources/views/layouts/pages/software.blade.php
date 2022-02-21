@@ -58,7 +58,7 @@
 
                     </div>
                     <div class="mx-auto mt-5 prose lg:max-w-none lg:row-start-1 lg:col-start-1">
-                        <a href="/">
+                        <a href="https://genefox-lacar.com/">
                             <button class="px-5 py-3 font-medium text-white bg-yellow-500 rounded-lg ">Go to the
                                 software</button>
                         </a>

@@ -12,7 +12,7 @@
                     {{ $category['title'] }}
                 </p>
                 <p class="mt-3 text-base text-gray-500">
-                    {{ $category['description'] }}
+                    {{ strip_tags($category['description']) }}
                 </p>
             </a>
         </div>

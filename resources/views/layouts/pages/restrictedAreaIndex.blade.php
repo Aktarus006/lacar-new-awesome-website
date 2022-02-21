@@ -2,12 +2,12 @@
 @section('content')
     <div class="container px-4 py-8 mx-auto space-y-4 sm:px-6 lg:px-8">
         @if ($isos->count() > 0)
-            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Isos</h1>
+            <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">ISO13485 Certficate</h1>
             <x-documents-list :documents="$isos"></x-documents-list>
         @endif
-        @if ($isos->count() > 0)
+        @if ($instructions->count() > 0)
             <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">Instructions</h1>
-            <x-documents-list :documents="$isos"></x-documents-list>
+            <x-documents-list :documents="$instructions"></x-documents-list>
         @endif
         @if ($ces->count() > 0)
             <h1 class="text-xl font-medium tracking-wide text-gray-500 uppercase">CE Declarations</h1>

@@ -52,7 +52,7 @@
                                     @foreach ($covid->kits as $kit)
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                             x-on:mouseleave="isSubOpen=false" class="">
-                                            <div class="relative p-4 rounded-t-md hover:bg-yellow-500">
+                                            <div class="relative p-4 rounded-md hover:bg-yellow-500">
                                                 <a href="/{{ $kit->slug }}"
                                                     class="text-white">{{ $kit->name }}</a>
 

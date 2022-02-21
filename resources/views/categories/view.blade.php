@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 @foreach ($category->kits as $kit)
-                    <div class="max-w-xs">
+                    <div class="w-screen max-w-sm">
                         <a href="/p/{{ $kit['slug'] }}">
                             <div class="flex items-center rounded-full hover:text-white hover:bg-yellow-500">
                                 <button type="button"

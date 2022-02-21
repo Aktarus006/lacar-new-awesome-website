@@ -12,7 +12,7 @@
             </h3>
         </div>
     </div>
-    <div class="flex flex-col items-center justify-center px-12 py-8 overflow-hidden bg-cover bg-home-banner-2 ta-gallery-element ta-gallery-anim-scroll flex-center bg-opacity-95 bg-blur-1 sm:px-24 sm:py-12"
+    {{-- <div class="flex flex-col items-center justify-center px-12 py-8 overflow-hidden bg-cover bg-home-banner-2 ta-gallery-element ta-gallery-anim-scroll flex-center bg-opacity-95 bg-blur-1 sm:px-24 sm:py-12"
         x-cloak>
         <div class="text-base font-semibold leading-relaxed text-center text-gray-900 sm:text-xl">
             <h2 class="text-3xl font-bold text-white sm:text-4xl text-shadow-lg">
@@ -24,7 +24,7 @@
             <button class="p-3 font-normal text-white uppercase bg-yellow-500 rounded-lg text-small hover:bg-yellow-600">
                 More Information</button>
         </div>
-    </div>
+    </div> --}}
     <!--- END SLIDES /-->
     <!--- START BACKGROUND /-->
     <div

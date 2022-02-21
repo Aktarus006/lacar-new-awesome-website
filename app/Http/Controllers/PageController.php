@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Job;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -15,5 +16,11 @@ class PageController extends Controller
         $teams = Team::all();
 
         return view('home', compact('cat', 'teams'));
+    }
+
+    public function jobs()
+    {
+        $jobs = Job::all();
+        return view('jobs.index', compact('jobs'));
     }
 }

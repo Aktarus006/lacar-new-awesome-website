@@ -41,7 +41,7 @@
                                     </h2>
                                     <h1 class="mb-3 text-lg font-medium text-gray-900 title-font">{{ $job->title }}</h1>
                                     <p class="mb-3 leading-relaxed">
-                                        {{ $job->profile }}
+                                        {{ html_entity_decode($job->profile) }}
                                     <p>
                                     <div class="flex flex-wrap items-center ">
                                         <a class="inline-flex items-center text-yellow-500 md:mb-2 lg:mb-0">Learn More

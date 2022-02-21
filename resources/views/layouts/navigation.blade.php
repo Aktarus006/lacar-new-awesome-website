@@ -95,24 +95,7 @@
                                     </a>
 
                                 </div>
-                                <div class="px-5 py-5 space-y-6 bg-gray-50 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
 
-                                    <div>
-                                        <a href="#"
-                                            class="flex items-center p-3 -m-3 text-base font-light text-gray-900 rounded-md hover:bg-gray-100">
-                                            <!-- Heroicon name: outline/play -->
-                                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500"
-                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-                                                stroke="currentColor" aria-hidden="true">
-                                                <path fill-rule="evenodd"
-                                                    d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
-                                                    clip-rule="evenodd" />
-                                            </svg>
-                                            </svg>
-                                            <span class="ml-3">Testing for entreprises</span>
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,14 +144,15 @@
                                     @foreach ($categories as $category)
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                             x-on:mouseleave="isSubOpen=false" class="">
-                                            <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                            <div class="relative p-4 rounded-t-md hover:bg-yellow-500">
                                                 <a href="/{{ $category->slug }}"
                                                     class="text-white">{{ $category->name }}</a>
                                                 @if ($category->kits->count() > 0)
                                                     <div x-show="isSubOpen"
-                                                        class="absolute top-0 left-0 p-3 mt-12 space-y-2 bg-gray-50 rounded-b-md">
+                                                        class="absolute top-0 left-0 max-w-sm mt-12 space-y-2 bg-gray-50 rounded-b-md rounded-tr-md">
                                                         @foreach ($category->kits as $kit)
-                                                            <div class="w-screen text-red-300">
+                                                            <div
+                                                                class="w-screen max-w-sm p-4 text-gray-500 rounded-md hover:bg-gray-100 hover:text-yellow-500">
                                                                 <a href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
                                                             </div>
                                                         @endforeach

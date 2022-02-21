@@ -25,41 +25,41 @@
                 </h3>
                 <ul class="mt-4 space-y-4">
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/" class="text-base text-gray-500 hover:text-yellow-500">
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/kits" class="text-base text-gray-500 hover:text-yellow-500">
                             Kits
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/solutions" class="text-base text-gray-500 hover:text-yellow-500">
                             Solutions
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/software" class="text-base text-gray-500 hover:text-yellow-500">
                             Software
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/restricted" class="text-base text-gray-500 hover:text-yellow-500">
                             Restricted Area
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/services" class="text-base text-gray-500 hover:text-yellow-500">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="text-base text-gray-500 hover:text-yellow-500">
-                            Team
+                        <a href="/jobs" class="text-base text-gray-500 hover:text-yellow-500">
+                            Jobs
                         </a>
                     </li>
                 </ul>

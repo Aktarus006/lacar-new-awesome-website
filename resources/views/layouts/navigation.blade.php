@@ -9,9 +9,9 @@
             </div>
 
             <nav class="hidden h-full space-x-10 xl:flex">
-                <div class="relative h-full select-none" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
+                <div class="h-full select-none " @mouseenter="isOpen = true" @mouseleave="isOpen = false"
                     @click.away="isOpen = false" x-data="{ isOpen: false}">
-                    <div class="relative" @click="isOpen = !isOpen">
+                    <div class="" @click="isOpen = !isOpen">
                         <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                         <button type="button"
                             class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
@@ -45,57 +45,22 @@
                             x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-50 transform"
                             x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-                            class="absolute z-10 w-screen max-w-md px-2 pt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                                <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
-                                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                        <!-- Heroicon name: outline/chart-bar -->
+                            class="absolute left-0 z-10 w-screen px-2 transform sm:px-0">
+                            <div class="shadow-lg">
+                                <div
+                                    class="flex flex-row items-center h-12 gap-4 px-2 mt-10 bg-gray-800 bg-opacity-90 sm:gap-8 sm:p-8">
+                                    @foreach ($covid->kits as $kit)
+                                        <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
+                                            x-on:mouseleave="isSubOpen=false" class="">
+                                            <div class="relative p-4 rounded-t-md hover:bg-yellow-500">
+                                                <a href="/{{ $kit->slug }}"
+                                                    class="text-white">{{ $kit->name }}</a>
 
-                                        <div class="ml-4">
-                                            <p class="text-base font-light text-gray-900">
-                                                From nasopharyngeal Swab
-                                            </p>
-
-                                        </div>
-                                    </a>
-
-                                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                        <!-- Heroicon name: outline/chart-bar -->
-
-                                        <div class="ml-4">
-                                            <p class="text-base font-light text-gray-900">
-                                                From saliva
-                                            </p>
+                                            </div>
 
                                         </div>
-                                    </a>
-
-                                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                        <!-- Heroicon name: outline/chart-bar -->
-
-                                        <div class="ml-4">
-                                            <p class="text-base font-light text-gray-900">
-                                                COVID19 variants
-                                            </p>
-
-                                        </div>
-                                    </a>
-
-
-
-                                    <a href="#" class="flex items-start p-3 -m-3 rounded-lg hover:bg-gray-50">
-                                        <!-- Heroicon name: outline/cursor-click -->
-
-                                        <div class="ml-4">
-                                            <p class="text-base font-light text-gray-900">
-                                                Acute symptoms SNPs
-                                            </p>
-
-                                        </div>
-                                    </a>
-
+                                    @endforeach
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -261,43 +226,25 @@ To: "opacity-0 scale-95"
             <div class="md:flex">
                 <div class="md:w-1/3">
                     <nav class="mt-10">
-                        <a href="#" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <!-- Heroicon name: outline/chart-bar -->
-                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                            </svg>
+                        <a href="/covid" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
                             <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Analytics
+                                COVID
                             </span>
                         </a>
 
-                        <a href="#" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <!-- Heroicon name: outline/cursor-click -->
-                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-                            </svg>
+                        <a href="/kits" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
                             <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Engagement
+                                Kits
                             </span>
                         </a>
 
-                        <a href="#" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <!-- Heroicon name: outline/shield-check -->
-                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
+                        <a href="/solutions" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
                             <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Security
+                                Solutions
                             </span>
                         </a>
 
-                        <a href="#" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                        <a href="/software" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
                             <!-- Heroicon name: outline/view-grid -->
                             <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -305,11 +252,11 @@ To: "opacity-0 scale-95"
                                     d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                             </svg>
                             <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Integrations
+                                Software
                             </span>
                         </a>
 
-                        <a href="#" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                        <a href="/restricted" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
                             <!-- Heroicon name: outline/refresh -->
                             <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -317,46 +264,34 @@ To: "opacity-0 scale-95"
                                     d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                             </svg>
                             <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Automations
+                                Restricted Area
+                            </span>
+                        </a>
+
+                        <a href="/services" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                            <!-- Heroicon name: outline/refresh -->
+                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span class="ml-3 text-lg font-semibold text-gray-900">
+                                Services
+                            </span>
+                        </a>
+
+                        <a href="/jobs" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                            <!-- Heroicon name: outline/refresh -->
+                            <svg class="flex-shrink-0 w-6 h-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                            </svg>
+                            <span class="ml-3 text-lg font-semibold text-gray-900">
+                                Jobs
                             </span>
                         </a>
                     </nav>
-                </div>
-
-                <div class="px-5 py-6 mt-6 space-y-6 md:w-2/3 bg-gray-50 ">
-                    <div class="grid grid-cols-2 gap-y-4 gap-x-8">
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Pricing
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Docs
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Enterprise
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Blog
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Help Center
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Guides
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Security
-                        </a>
-
-                        <a href="#" class="text-base font-light text-gray-900 hover:text-gray-700">
-                            Events
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>

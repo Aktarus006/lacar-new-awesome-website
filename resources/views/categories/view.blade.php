@@ -74,62 +74,41 @@
             </div>
             <div class="grid gap-16 pt-12 mt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
                 <div>
-                    <div>
-                        <a href="#" class="inline-block">
-                            <span
-                                class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-                                Article
-                            </span>
-                        </a>
+                    <div class="inline-box">
+                        <span
+                            class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-500 text-white w-12 h-12">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z">
+                                </path>
+                            </svg>
+                        </span>
                     </div>
-                    <a href="#" class="block mt-4">
+                    <div class="block mt-4">
                         <p class="text-2xl font-semibold text-gray-900">
                             SIMPLICITY
                         </p>
                         <p class="mt-3 text-base text-gray-500">
                             No laborious DNA extraction procedure
                         </p>
-                    </a>
-                    <div class="flex items-center mt-6">
-                        <div class="flex-shrink-0">
-                            <a href="#">
-                                <span class="sr-only">Paul York</span>
-                                <img class="w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">
-                                <a href="#">
-                                    Paul York
-                                </a>
-                            </p>
-                            <div class="flex space-x-1 text-sm text-gray-500">
-                                <time datetime="2020-03-16">
-                                    Mar 16, 2020
-                                </time>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                <span>
-                                    6 min read
-                                </span>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
 
                 <div>
-                    <div>
-                        <a href="#" class="inline-block">
-                            <span
-                                class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-pink-100 text-pink-800">
-                                Video
-                            </span>
-                        </a>
+                    <div class="inline-block">
+                        <span
+                            class="inline-flex items-center px-3 py-0.5 rounded-full w-12 h-12 text-sm font-medium bg-yellow-500 text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <a href="#" class="block mt-4">
+                    <div class="block mt-4">
                         <p class="text-2xl font-semibold text-gray-900">
                             RAPIDITY
                         </p>
@@ -138,82 +117,32 @@
                             <br>
                             25 minutes amplification + detection
                         </p>
-                    </a>
-                    <div class="flex items-center mt-6">
-                        <div class="flex-shrink-0">
-                            <a href="#">
-                                <span class="sr-only">Dessie Ryan</span>
-                                <img class="w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">
-                                <a href="#">
-                                    Dessie Ryan
-                                </a>
-                            </p>
-                            <div class="flex space-x-1 text-sm text-gray-500">
-                                <time datetime="2020-03-10">
-                                    Mar 10, 2020
-                                </time>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                <span>
-                                    4 min read
-                                </span>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
 
                 <div>
-                    <div>
-                        <a href="#" class="inline-block">
-                            <span
-                                class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">
-                                Case Study
-                            </span>
-                        </a>
+                    <div class="inline-block w-1/2 mx-auto">
+                        <span
+                            class="inline-flex justify-center items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-500 text-white w-12 h-12">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <a href="#" class="block mt-4">
+                    <div class="block mt-4">
+
                         <p class="text-2xl font-semibold text-gray-900">
                             EFFICIENCY
                         </p>
                         <p class="mt-3 text-base text-gray-500">
                             Perfect distinction of the heterozygote
                         </p>
-                    </a>
-                    <div class="flex items-center mt-6">
-                        <div class="flex-shrink-0">
-                            <a href="#">
-                                <span class="sr-only">Easer Collins</span>
-                                <img class="w-10 h-10 rounded-full"
-                                    src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixqx=AXQIJjKewm&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                    alt="">
-                            </a>
-                        </div>
-                        <div class="ml-3">
-                            <p class="text-sm font-medium text-gray-900">
-                                <a href="#">
-                                    Easer Collins
-                                </a>
-                            </p>
-                            <div class="flex space-x-1 text-sm text-gray-500">
-                                <time datetime="2020-02-12">
-                                    Feb 12, 2020
-                                </time>
-                                <span aria-hidden="true">
-                                    &middot;
-                                </span>
-                                <span>
-                                    11 min read
-                                </span>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -306,5 +235,5 @@
         </div>
     </div>
     @include('layouts.contactForm', ['subject' => 'Request for : '.$category->name, 'description' => 'Feel free to
-    contact us !', 'title' => 'Want to know more about '.$category->name.'?']])
+    contact us !', 'title' => 'Want to know more about '.$category->name.'?'])
 @endsection

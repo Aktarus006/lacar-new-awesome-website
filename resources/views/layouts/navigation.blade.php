@@ -54,15 +54,17 @@
                                 <div
                                     class="flex flex-row items-center h-12 gap-4 px-2 mt-10 bg-gray-800 bg-opacity-90 sm:gap-8 sm:p-8">
                                     @foreach ($covid->kits as $kit)
-                                        <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
-                                            x-on:mouseleave="isSubOpen=false" class="">
-                                            <div class="relative p-4 rounded-md hover:bg-yellow-500">
-                                                <a href="/p/{{ $kit->slug }}"
-                                                    class="text-white">{{ $kit->name }}</a>
+                                        <a href="/p/{{ $kit->slug }}">
+                                            <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
+                                                x-on:mouseleave="isSubOpen=false" class="">
+                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+
+                                                    class="text-white">{{ $kit->name }}
+
+                                                </div>
 
                                             </div>
-
-                                        </div>
+                                        </a>
                                     @endforeach
                                 </div>
                             </div>
@@ -111,21 +113,24 @@
                                     @foreach ($categories as $category)
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                             x-on:mouseleave="isSubOpen=false" class="">
-                                            <div class="relative p-4 rounded-t-md hover:bg-yellow-500">
-                                                <a href="/{{ $category->slug }}"
-                                                    class="text-white">{{ $category->name }}</a>
-                                                @if ($category->kits->count() > 0)
-                                                    <div x-show="isSubOpen"
-                                                        class="absolute top-0 left-0 max-w-sm mt-12 space-y-2 bg-gray-50 rounded-b-md rounded-tr-md">
-                                                        @foreach ($category->kits as $kit)
-                                                            <div
-                                                                class="w-screen max-w-sm p-4 text-gray-500 rounded-md hover:bg-gray-100 hover:text-yellow-500">
-                                                                <a href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
-                                                            </div>
-                                                        @endforeach
-                                                    </div>
-                                                @endisset
-                                        </div>
+                                            <a href="/{{ $category->slug }}">
+                                                <div class="relative p-4 text-white rounded-t-md hover:bg-yellow-500">
+
+                                                    {{ $category->name }}
+                                                    @if ($category->kits->count() > 0)
+                                                        <div x-show="isSubOpen"
+                                                            class="absolute top-0 left-0 max-w-sm mt-12 space-y-2 bg-gray-50 rounded-b-md rounded-tr-md">
+                                                            @foreach ($category->kits as $kit)
+                                                                <div
+                                                                    class="w-screen max-w-sm p-4 text-gray-500 rounded-md hover:bg-gray-100 hover:text-yellow-500">
+                                                                    <a
+                                                                        href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
+                                                                </div>
+                                                            @endforeach
+                                                        </div>
+                                                    @endisset
+                                            </div>
+                                        </a>
 
                                     </div>
                                 @endforeach

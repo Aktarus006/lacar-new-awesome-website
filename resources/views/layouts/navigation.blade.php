@@ -339,7 +339,7 @@ To: "opacity-0 translate-y-1"
                                                 class="h-24 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
                                                 <div class="relative p-4 rounded-md hover:bg-yellow-500">
                                                     <a href="/{{ $cat->slug }}"
-                                                        class="text-gray-600">{{ $cat->name }}</a>
+                                                        class="text-sm text-gray-600">{{ $cat->name }}</a>
                                                 </div>
                                             </div>
                                         @endforeach

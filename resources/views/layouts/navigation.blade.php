@@ -13,22 +13,26 @@
                     @click.away="isOpen = false" x-data="{ isOpen: false}">
                     <div class="" @click="isOpen = !isOpen">
                         <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-                        <button type="button"
-                            class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                            <span>{{ $covid->name }}</span>
-                            <!--
+                        <a href="/covid">
+
+                            <button type="button"
+                                class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                                <span>{{ $covid->name }}</span>
+                                <!--
               Heroicon name: solid/chevron-down
 
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
-                            <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                aria-hidden="true">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </button>
+
+                                <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </a>
 
                         <!--
             'Solutions' flyout menu, show/hide based on flyout menu state.
@@ -53,7 +57,7 @@
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                             x-on:mouseleave="isSubOpen=false" class="">
                                             <div class="relative p-4 rounded-md hover:bg-yellow-500">
-                                                <a href="/{{ $kit->slug }}"
+                                                <a href="/p/{{ $kit->slug }}"
                                                     class="text-white">{{ $kit->name }}</a>
 
                                             </div>
@@ -271,7 +275,7 @@ To: "opacity-0 translate-y-1"
                                                 x-on:mouseleave="isSubOpen=false"
                                                 class="h-12 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
                                                 <div class="relative p-4 rounded-md hover:bg-yellow-500">
-                                                    <a href="/{{ $kit->slug }}"
+                                                    <a href="/p/{{ $kit->slug }}"
                                                         class="text-gray-600">{{ $kit->name }}</a>
 
                                                 </div>

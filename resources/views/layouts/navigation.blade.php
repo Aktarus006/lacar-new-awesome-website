@@ -68,25 +68,23 @@
                 <div class="h-full" @mouseenter="isOpen = true" @mouseleave="isOpen = false"
                     @click.away="isOpen = false" x-data="{isOpen : false}">
                     <div @click="isOpen = !isOpen" class="h-full">
-                        <a href="/kits">
-                            <!-- Item active: "text-gray-900" , Item inactive: "text-gray-500" -->
-                            <button type="button"
-                                class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
-                                <span>Kits</span>
-                                <!--
+                        <!-- Item active: "text-gray-900" , Item inactive: "text-gray-500" -->
+                        <button type="button"
+                            class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                            <span>Kits</span>
+                            <!--
               Heroicon name: solid/chevron-down
 
               Item active: "text-gray-600", Item inactive: "text-gray-400"
             -->
-                                <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
-                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                    aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
-                        </a>
+                            <svg class="w-5 h-5 ml-2 text-gray-400 group-hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
                         <!--
             'More' flyout menu, show/hide based on flyout menu state.
 
@@ -225,52 +223,165 @@ To: "opacity-0 scale-95"
             </div>
             <div class="md:flex">
                 <div class="md:w-1/3">
-                    <nav class="mt-10">
-                        <a href="/covid" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                COVID
-                            </span>
-                        </a>
+                    <nav class="mt-10 space-y-4">
+                        <div class="h-full select-none " @mouseenter="isOpen = true" @mouseleave="isOpen = false"
+                            @click.away="isOpen = false" x-data="{ isOpen: false}">
+                            <div class="" @click="isOpen = !isOpen">
+                                <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>{{ $covid->name }}</span>
+                                    <!--
+Heroicon name: solid/chevron-down
 
-                        <a href="/kits" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Kits
-                            </span>
-                        </a>
+Item active: "text-gray-600", Item inactive: "text-gray-400"
+-->
+                                    <svg class="absolute w-5 h-5 ml-2 text-gray-400 right-8 group-hover:text-gray-500"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
 
-                        <a href="/solutions" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Solutions
-                            </span>
-                        </a>
+                                <!--
+'Solutions' flyout menu, show/hide based on flyout menu state.
 
-                        <a href="/software" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+Entering: "transition ease-out duration-200"
+From: "opacity-0 translate-y-1"
+To: "opacity-100 translate-y-0"
+Leaving: "transition ease-in duration-150"
+From: "opacity-100 translate-y-0"
+To: "opacity-0 translate-y-1"
+-->
+                                <div x-show="isOpen" @mouseleave="isOpen = false" x-cloak
+                                    x-transition:enter="transition ease-out duration-50 transform"
+                                    x-transition:enter-start="opacity-0 scale-95"
+                                    x-transition:enter-end="opacity-100 scale-100"
+                                    x-transition:leave="transition ease-in duration-50 transform"
+                                    x-transition:leave-start="opacity-100 scale-100"
+                                    x-transition:leave-end="opacity-0 scale-95"
+                                    class="w-full my-4 transform sm:px-0">
 
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Software
-                            </span>
-                        </a>
+                                    <div class="space-y-2">
+                                        @foreach ($covid->kits as $kit)
+                                            <div x-data="{isSubOpen : false}"
+                                                x-on:mouseenter=" isSubOpen=!isSubOpen"
+                                                x-on:mouseleave="isSubOpen=false"
+                                                class="h-12 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
+                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                                    <a href="/{{ $kit->slug }}"
+                                                        class="text-gray-600">{{ $kit->name }}</a>
 
-                        <a href="/restricted" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                                                </div>
 
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Restricted Area
-                            </span>
-                        </a>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                        <a href="/services" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                        <div class="h-full select-none " @mouseenter="isOpen = true" @mouseleave="isOpen = false"
+                            @click.away="isOpen = false" x-data="{ isOpen: false}">
+                            <div class="" @click="isOpen = !isOpen">
+                                <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Kits</span>
+                                    <!--
+Heroicon name: solid/chevron-down
 
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Services
-                            </span>
-                        </a>
+Item active: "text-gray-600", Item inactive: "text-gray-400"
+-->
+                                    <svg class="absolute w-5 h-5 ml-2 text-gray-400 right-8 group-hover:text-gray-500"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
 
-                        <a href="/jobs" class="flex p-3 -m-3 rounded-md hover:bg-gray-50">
+                                <!--
+'Solutions' flyout menu, show/hide based on flyout menu state.
 
-                            <span class="ml-3 text-lg font-semibold text-gray-900">
-                                Jobs
-                            </span>
-                        </a>
+Entering: "transition ease-out duration-200"
+From: "opacity-0 translate-y-1"
+To: "opacity-100 translate-y-0"
+Leaving: "transition ease-in duration-150"
+From: "opacity-100 translate-y-0"
+To: "opacity-0 translate-y-1"
+-->
+                                <div x-show="isOpen" @mouseleave="isOpen = false" x-cloak
+                                    x-transition:enter="transition ease-out duration-50 transform"
+                                    x-transition:enter-start="opacity-0 scale-95"
+                                    x-transition:enter-end="opacity-100 scale-100"
+                                    x-transition:leave="transition ease-in duration-50 transform"
+                                    x-transition:leave-start="opacity-100 scale-100"
+                                    x-transition:leave-end="opacity-0 scale-95"
+                                    class="w-full my-4 transform sm:px-0">
+                                    <div class="space-y-2">
+                                        @foreach ($categories as $cat)
+                                            <div x-data="{isSubOpen : false}"
+                                                x-on:mouseenter=" isSubOpen=!isSubOpen"
+                                                x-on:mouseleave="isSubOpen=false"
+                                                class="h-12 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
+                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                                    <a href="/{{ $cat->slug }}"
+                                                        class="text-gray-600">{{ $cat->name }}</a>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full my-4 transform sm:px-0">
+                            <a href="/solutions">
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Solutions</span>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="w-full my-4 transform sm:px-0">
+                            <a href="/software">
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Software</span>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="w-full my-4 transform sm:px-0">
+                            <a href="/restricted">
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Restricted Area</span>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="w-full my-4 transform sm:px-0">
+                            <a href="/services">
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Services</span>
+                                </button>
+                            </a>
+                        </div>
+
+                        <div class="w-full my-4 transform sm:px-0">
+                            <a href="/jobs">
+                                <button type="button"
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    <span>Jobs</span>
+                                </button>
+                            </a>
+                        </div>
                     </nav>
                 </div>
             </div>

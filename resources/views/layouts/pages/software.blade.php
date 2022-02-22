@@ -1,10 +1,12 @@
 @extends('master')
 
 @section('content')
-    <header
-        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-center bg-no-repeat bg-cover bg-opacity-70 h-1/4 sm:h-2/3 bg-software">
+    <header class="relative flex items-center justify-center h-1/4 sm:h-2/3">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img class="object-cover w-full h-full" src="/images/lacar-36.jpg" />
+        </div>
 
-        <div class="text-center">
+        <div class="z-10 text-center">
             <h1 class="p-5 text-lg font-bold text-white sm:text-7xl text-shadow-lg">
                 OUR SOFTWARE
             </h1>

@@ -1,8 +1,10 @@
 @extends('master')
 @section('content')
-    <header
-        class="relative flex items-center justify-center bg-fixed bg-gray-500 bg-center bg-no-repeat bg-contain sm:bg-cover bg-opacity-70 h-1/4 sm:h-2/3 bg-solutions">
-        <div class="text-center">
+    <header class="relative flex items-center justify-center h-1/4 sm:h-2/3">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img class="object-cover object-top w-full h-full" src="/images/solutions-banner.jpg" />
+        </div>
+        <div class="z-10 text-center">
             <h1 class="p-5 text-lg font-bold text-white uppercase sm:text-7xl text-shadow-lg">
                 Our solutions
             </h1>
@@ -10,6 +12,7 @@
                 Unique CE-IVD solutions to ease up your workflow
             </h2>
         </div>
+
     </header>
 
     <div class="relative px-4 pt-16 pb-20 bg-gray-50 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">

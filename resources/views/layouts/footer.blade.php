@@ -30,11 +30,11 @@
                         </a>
                     </li>
 
-                    <li>
+                    {{-- <li>
                         <a href="/kits" class="text-base text-gray-500 hover:text-yellow-500">
                             Kits
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a href="/solutions" class="text-base text-gray-500 hover:text-yellow-500">

@@ -57,9 +57,9 @@
                                         <a href="/p/{{ $kit->slug }}">
                                             <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                                 x-on:mouseleave="isSubOpen=false" class="">
-                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                                <div class="relative p-4 text-white rounded-md hover:bg-yellow-500">
 
-                                                    class="text-white">{{ $kit->name }}
+                                                    {{ $kit->name }}
 
                                                 </div>
 

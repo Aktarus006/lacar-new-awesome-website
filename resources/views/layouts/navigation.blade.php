@@ -336,7 +336,7 @@ To: "opacity-0 translate-y-1"
                                             <div x-data="{isSubOpen : false}"
                                                 x-on:mouseenter=" isSubOpen=!isSubOpen"
                                                 x-on:mouseleave="isSubOpen=false"
-                                                class="h-16 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
+                                                class="h-24 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
                                                 <div class="relative p-4 rounded-md hover:bg-yellow-500">
                                                     <a href="/{{ $cat->slug }}"
                                                         class="text-gray-600">{{ $cat->name }}</a>

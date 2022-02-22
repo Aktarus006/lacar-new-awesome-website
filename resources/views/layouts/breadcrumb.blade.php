@@ -1,6 +1,6 @@
 @unless($breadcrumbs->isEmpty())
-    <nav class="flex bg-white border-b border-gray-200" aria-label="Breadcrumb"">
-                                                            <ol class="flex w-full max-w-screen-xl px-4 mx-auto space-x-4  sm:px-6 lg:px-8">
+    <nav class="hidden bg-white border-b border-gray-200 lg:flex" aria-label="Breadcrumb"">
+                                                                <ol class="flex w-full max-w-screen-xl px-4 mx-auto space-x-4  sm:px-6 lg:px-8">
         @foreach ($breadcrumbs as $breadcrumb)
             @if ($breadcrumb->url && !$loop->last)
                 <li class="flex">

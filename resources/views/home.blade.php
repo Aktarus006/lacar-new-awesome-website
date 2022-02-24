@@ -51,8 +51,7 @@
                 <div class="relative bg-gray-900">
                     <div class="relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                         <img class="object-cover w-full h-full" src="{{ asset('/images/lacar-55.jpg') }}" alt="">
-                        <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600"
-                            style="mix-blend-mode: multiply;"></div>
+
                     </div>
                     <div
                         class="relative max-w-md px-4 py-12 mx-auto sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32">
@@ -89,7 +88,4 @@
             </main>
         </div>
     </div>
-
-
-
 @endsection

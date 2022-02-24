@@ -1,4 +1,7 @@
 @extends('master')
+@section('meta')
+    <title>{{ $kit->meta_title }} | Lacar-MDX</title>
+@endsection
 
 @section('content')
     {{ Breadcrumbs::render('category', $category) }}
@@ -20,7 +23,7 @@
                     Fast and easy detection
                 </p>
                 <p class="mt-3 text-lg text-gray-300">
-                    {{ strip_tags(html_entity_decode($category->description)) }}
+                    {!! html_entity_decode($category->description) !!}
                 </p>
 
             </div>
@@ -58,7 +61,6 @@
                                 </div>
                             </a>
                         </div>
-
                     @endforeach
                 </div>
             </div>

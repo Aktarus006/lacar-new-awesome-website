@@ -2,7 +2,7 @@
 @section('content')
     <header class="relative flex items-center justify-center h-1/4 sm:h-2/3">
         <div class="absolute top-0 left-0 w-full h-full">
-            <img class="object-cover object-center w-full h-full scale-50" src="/images/lacar-10.jpg" />
+            <img class="object-cover object-center w-full h-full" src="/images/lacar-10.jpg" />
         </div>
 
         <div class="z-10 text-center">

@@ -12,7 +12,7 @@
                 src="{{ asset(Voyager::image($category->image)) != '' ? asset(Voyager::image($category->image)) : '' }} "
                 alt="">
         </div>
-        <div class="relative px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-16">
+        <div class="relative px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-12">
             <h1 class="text-2xl font-extrabold text-yellow-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">
                 {{ $category->name }}</h1>
             <div class="mt-2 md:ml-auto md:w-1/2 md:pl-10">

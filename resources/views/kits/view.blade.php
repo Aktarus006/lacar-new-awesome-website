@@ -44,7 +44,7 @@
             <div class="my-20">
                 <h2 class="text-2xl font-extrabold text-gray-800">DISEASE INFORMATION</h2>
                 <div class="w-12 h-1 my-4 bg-yellow-400"></div>
-                <div class="mt-12 text-lg prose text-gray-600">
+                <div class="w-full mt-12 text-lg prose text-gray-600">
                     {!! html_entity_decode($kit->disease_information) !!}
                 </div>
             </div>

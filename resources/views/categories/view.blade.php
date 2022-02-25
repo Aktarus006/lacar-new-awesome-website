@@ -1,6 +1,6 @@
 @extends('master')
 @section('meta')
-    <title>{{ $kit->meta_title }} | Lacar-MDX</title>
+    <title>{{ $category->meta_title }} | Lacar-MDX</title>
 @endsection
 
 @section('content')

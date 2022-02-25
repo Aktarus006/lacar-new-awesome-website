@@ -208,7 +208,7 @@ Leaving: "duration-100 ease-in"
 From: "opacity-100 scale-100"
 To: "opacity-0 scale-95"
 -->
-<div x-data="{ isOpen : false }" x-show="isOpen"
+<div x-data="{ isOpen : false }" x-show="isOpen" x-cloak
     @open-dropdown.window="if ($event.detail.id == 'mobile-menu') isOpen = true;"
     class="absolute inset-x-0 top-0 z-50 p-2 transition origin-top-right transform xl:hidden">
     <div class="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">

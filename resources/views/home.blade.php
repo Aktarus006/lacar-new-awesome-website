@@ -16,7 +16,7 @@
                 <div class="relative hidden bg-white lg:block">
                     <div class="sticky rounded-full top-8 aspect-h-8 sm:aspect-w-16 sm:aspect-h-4">
                         <video autoplay muted loop controls>
-                            <source src="https://www.lacar-mdx.com/videos/Lacar_4.mp4">
+                            <source src="/videos/LaCAR_4.mp4">
                         </video>
                     </div>
                 </div>

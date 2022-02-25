@@ -13,13 +13,13 @@
                         @include('layouts.slider')
                     </div>
                 </div>
-                <div class="relative hidden bg-white lg:block">
+                {{-- <div class="relative hidden bg-white lg:block">
                     <div class="sticky rounded-full top-8 aspect-h-8 sm:aspect-w-16 sm:aspect-h-4">
                         <video autoplay muted loop controls>
                             <source src="https://lacar-mdx.com/files\LaCAR Marketing">
                         </video>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Blog section -->
                 <div class="relative py-16 bg-gray-50 sm:py-24 lg:py-32">

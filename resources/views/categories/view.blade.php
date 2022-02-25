@@ -23,7 +23,7 @@
                     Fast and easy detection
                 </p>
                 <p class="mt-3 text-lg text-gray-300">
-                    {{ html_entity_decode($category->description) }}
+                    {{ strip_tags(html_entity_decode($category->description)) }}
                 </p>
 
             </div>

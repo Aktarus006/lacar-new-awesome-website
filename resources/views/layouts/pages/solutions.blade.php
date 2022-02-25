@@ -36,11 +36,7 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Article
-                                </a>
-                            </p>
+
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     LC-GENIE III
@@ -68,11 +64,7 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Video
-                                </a>
-                            </p>
+
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     qPCR PLATFORMS
@@ -103,11 +95,7 @@
                     </div>
                     <div class="flex flex-col justify-between flex-1 p-6 bg-white">
                         <div class="flex-1">
-                            <p class="text-sm font-medium text-yellow-600">
-                                <a href="#" class="hover:underline">
-                                    Case Study
-                                </a>
-                            </p>
+
                             <a href="#" class="block mt-2">
                                 <p class="text-xl font-semibold text-gray-900">
                                     AUTOMATISATION

@@ -16,14 +16,14 @@
             <h1 class="text-2xl font-extrabold text-yellow-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">
                 {{ $category->name }}</h1>
             <div class="mt-2 md:ml-auto md:w-1/2 md:pl-10">
-                <h2 class="text-base font-semibold tracking-wider text-gray-300 uppercase">
+                {{-- <h2 class="text-base font-semibold tracking-wider text-gray-300 uppercase">
                     Genetic Thrombosis
-                </h2>
+                </h2> --}}
                 <p class="mt-2 text-xl font-bold tracking-tight text-white sm:text-2xl">
                     Fast and easy detection
                 </p>
                 <p class="mt-3 text-lg text-gray-300">
-                    {!! html_entity_decode($category->description) !!}
+                    {{ html_entity_decode($category->description) }}
                 </p>
 
             </div>

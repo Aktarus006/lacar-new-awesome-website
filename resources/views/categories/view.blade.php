@@ -6,7 +6,7 @@
 @section('content')
     {{ Breadcrumbs::render('category', $category) }}
 
-    <div class="relative w-full bg-gray-800 h-1/2">
+    <div class="relative w-full bg-gray-800 h-96">
         <div class="h-56 bg-yellow-500 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img class="object-cover w-full h-full"
                 src="{{ asset(Voyager::image($category->image)) != '' ? asset(Voyager::image($category->image)) : '' }} "

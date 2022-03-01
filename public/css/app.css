@@ -2444,6 +2444,9 @@ select {
 .border {
   border-width: 1px;
 }
+.border-4 {
+  border-width: 4px;
+}
 .border-2 {
   border-width: 2px;
 }
@@ -2459,6 +2462,10 @@ select {
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.border-lacar-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(233 164 80 / var(--tw-border-opacity));
 }
 .border-red-300 {
   --tw-border-opacity: 1;
@@ -2809,9 +2816,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-.text-indigo-600 {
+.text-lacar-300 {
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: rgb(233 164 80 / var(--tw-text-opacity));
 }
 .text-black {
   --tw-text-opacity: 1;

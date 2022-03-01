@@ -33,7 +33,7 @@
         <div class="mx-10 mt-20 lg:mx-40">
             <div class="lg:flex">
                 <div class="w-full lg:w-1/2">
-                    <img src="https://www.lacar-mdx.com/images/kit-3.jpg" alt="">
+                    <img src="{{ $kit->is_CE ? '/images/kitCE.jpg' : '/images/kit.jpg' }}" alt="">
                 </div>
                 <div class="w-full pt-8 lg:w-1/2 lg:p-12">
                     <h2 class="text-2xl font-extrabold text-gray-800">INTENDED USE</h2>

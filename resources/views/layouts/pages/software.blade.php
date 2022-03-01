@@ -66,7 +66,10 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+    @include('layouts.contactForm', ['subject' => 'Genefox Software', 'description' => 'Request you’re
+    access here !', 'title' => 'You don’t have access to the software?'])
 @endsection

@@ -7,13 +7,13 @@
     {{ Breadcrumbs::render('category', $category) }}
 
     <div class="relative w-full bg-gray-800 h-96">
-        <div class="h-56 bg-yellow-500 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <div class="h-56 bg-lacar-500 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
             <img class="object-cover w-full h-full"
                 src="{{ asset(Voyager::image($category->image)) != '' ? asset(Voyager::image($category->image)) : '' }} "
                 alt="">
         </div>
         <div class="relative px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:py-12">
-            <h1 class="text-2xl font-extrabold text-yellow-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">
+            <h1 class="text-2xl font-extrabold text-lacar-500 md:text-5xl md:ml-auto md:w-1/2 md:pl-10">
                 {{ $category->name }}</h1>
             <div class="mt-2 md:ml-auto md:w-1/2 md:pl-10">
                 {{-- <h2 class="text-base font-semibold tracking-wider text-gray-300 uppercase">
@@ -36,7 +36,7 @@
                 <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                     KITS
                 </h2>
-                <div class="relative w-16 mt-5 mb-5 bg-yellow-500">
+                <div class="relative w-16 mt-5 mb-5 bg-lacar-500">
                     <div class="px-3 py-0.5 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     </div>
                 </div>
@@ -44,9 +44,9 @@
                     @foreach ($category->kits as $kit)
                         <div class="w-screen max-w-lg">
                             <a href="/p/{{ $kit['slug'] }}">
-                                <div class="flex items-center rounded-full hover:text-white hover:bg-yellow-500">
+                                <div class="flex items-center rounded-full hover:text-white hover:bg-lacar-500">
                                     <button type="button"
-                                        class="inline-flex items-center p-1 text-white bg-yellow-500 border border-transparent rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400">
+                                        class="inline-flex items-center p-1 text-white bg-lacar-500 border border-transparent rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-300">
                                         <!-- Heroicon name: solid/plus -->
                                         <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
@@ -80,7 +80,7 @@
                 <div>
                     <div class="inline-box">
                         <span
-                            class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-500 text-white w-12 h-12">
+                            class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-lacar-500 text-white w-12 h-12">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -103,7 +103,7 @@
                 <div>
                     <div class="inline-block">
                         <span
-                            class="inline-flex items-center px-3 py-0.5 rounded-full w-12 h-12 text-sm font-medium bg-yellow-500 text-white">
+                            class="inline-flex items-center px-3 py-0.5 rounded-full w-12 h-12 text-sm font-medium bg-lacar-500 text-white">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -128,7 +128,7 @@
                 <div>
                     <div class="inline-block w-1/2 mx-auto">
                         <span
-                            class="inline-flex justify-center items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-500 text-white w-12 h-12">
+                            class="inline-flex justify-center items-center px-3 py-0.5 rounded-full text-sm font-medium bg-lacar-500 text-white w-12 h-12">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -164,7 +164,7 @@
                 <h2 class="text-lg font-light tracking-tight text-gray-900 sm:text-3xl">
                     3 DIFFERENT SOLUTIONS TO FIT WITH ALL LABS' VOLUMES
                 </h2>
-                <div class="relative w-24 mx-auto mt-5 bg-yellow-500">
+                <div class="relative w-24 mx-auto mt-5 bg-lacar-500">
                     <div class="px-3 py-0.5 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     </div>
                 </div>

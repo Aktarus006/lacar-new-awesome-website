@@ -20,7 +20,7 @@
             <div class="mx-auto text-base max-w-prose lg:max-w-none">
                 <h3 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">JOB OPPORTUNITIES
                 </h3>
-                <div class="bg-yellow-500 py-0.5 w-16 mt-5"></div>
+                <div class="bg-lacar-500 py-0.5 w-16 mt-5"></div>
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
                                         {{ strip_tags(html_entity_decode($job->profile)) }}
                                     <p>
                                     <div class="flex flex-wrap items-center ">
-                                        <a class="inline-flex items-center text-yellow-500 md:mb-2 lg:mb-0">Learn More
+                                        <a class="inline-flex items-center text-lacar-500 md:mb-2 lg:mb-0">Learn More
                                             <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
                                                 stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                 <path d="M5 12h14"></path>

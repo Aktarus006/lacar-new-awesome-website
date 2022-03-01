@@ -23,7 +23,7 @@
             <h3 class="m-5 text-xl font-semibold leading-normal text-white sm:text-xl text-shadow-lg">
                 No RNA extraction solutions from nasopharyngeal and saliva samples & Acute symptoms SNPs
             </h3>
-            <button class="p-3 font-normal text-white uppercase bg-yellow-500 rounded-lg text-small hover:bg-yellow-600">
+            <button class="p-3 font-normal text-white uppercase rounded-lg bg-lacar-500 text-small hover:bg-lacar-700">
                 More Information</button>
         </div>
     </div>

@@ -16,7 +16,7 @@
                         <a href="/covid">
 
                             <button type="button"
-                                class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                                class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-500">
                                 <span>{{ $covid->name }}</span>
                                 <!--
               Heroicon name: solid/chevron-down
@@ -57,7 +57,7 @@
                                         <a href="/p/{{ $kit->slug }}">
                                             <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                                 x-on:mouseleave="isSubOpen=false" class="">
-                                                <div class="relative p-4 text-white rounded-md hover:bg-yellow-500">
+                                                <div class="relative p-4 text-white rounded-md hover:bg-lacar-500">
 
                                                     {{ $kit->name }}
 
@@ -76,7 +76,7 @@
                     <div @click="isOpen = !isOpen" class="h-full">
                         <!-- Item active: "text-gray-900" , Item inactive: "text-gray-500" -->
                         <button type="button"
-                            class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                            class="inline-flex items-center text-base font-light text-gray-500 uppercase bg-white rounded-md group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-500">
                             <span>Kits</span>
                             <!--
               Heroicon name: solid/chevron-down
@@ -114,7 +114,7 @@
                                         <div x-data="{isSubOpen : false}" x-on:mouseenter=" isSubOpen=!isSubOpen"
                                             x-on:mouseleave="isSubOpen=false" class="">
                                             <a href="/{{ $category->slug }}">
-                                                <div class="relative p-4 text-white rounded-t-md hover:bg-yellow-500">
+                                                <div class="relative p-4 text-white rounded-t-md hover:bg-lacar-500">
 
                                                     {{ $category->name }}
                                                     @if ($category->kits->count() > 0)
@@ -122,7 +122,7 @@
                                                             class="absolute top-0 left-0 max-w-sm mt-12 space-y-2 bg-gray-50 rounded-b-md rounded-tr-md">
                                                             @foreach ($category->kits as $kit)
                                                                 <div
-                                                                    class="w-screen max-w-sm p-4 text-gray-500 rounded-md hover:bg-gray-100 hover:text-yellow-500">
+                                                                    class="w-screen max-w-sm p-4 text-gray-500 rounded-md hover:bg-gray-100 hover:text-lacar-500">
                                                                     <a
                                                                         href="/p/{{ $kit->slug }}">{{ $kit->name }}</a>
                                                                 </div>
@@ -140,19 +140,19 @@
                 </div>
             </div>
 
-            <a href="/solutions" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+            <a href="/solutions" class="text-base font-light text-gray-500 uppercase hover:text-lacar-300">
                 Solutions
             </a>
-            <a href="/software" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+            <a href="/software" class="text-base font-light text-gray-500 uppercase hover:text-lacar-300">
                 Software
             </a>
-            <a href="/restricted" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+            <a href="/restricted" class="text-base font-light text-gray-500 uppercase hover:text-lacar-300">
                 Restricted Area
             </a>
-            <a href="/services" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+            <a href="/services" class="text-base font-light text-gray-500 uppercase hover:text-lacar-300">
                 Services
             </a>
-            <a href="/jobs" class="text-base font-light text-gray-500 uppercase hover:text-yellow-300">
+            <a href="/jobs" class="text-base font-light text-gray-500 uppercase hover:text-lacar-300">
                 Jobs
             </a>
         </nav>
@@ -161,7 +161,7 @@
                 <div class="flex-shrink-0">
                     <a href="/contact">
                         <button type="button"
-                            class="relative inline-flex items-center px-4 py-2 text-base font-light text-white bg-yellow-500 border border-transparent rounded-md shadow-sm hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-300">
+                            class="relative inline-flex items-center px-4 py-2 text-base font-light text-white border border-transparent rounded-md shadow-sm bg-lacar-500 hover:bg-lacar-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-300">
                             <!-- Heroicon name: solid/plus -->
                             <svg class="w-5 h-5 mr-2 -ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                 fill="currentColor" aria-hidden="true">
@@ -176,7 +176,7 @@
             </div>
             <div class="flex items-center mr-2 -my-2 xl:hidden" x-data="{ id : 'mobile-menu'}">
                 <button type="button" @click="$dispatch('open-dropdown',{id})"
-                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                    class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lacar-500">
                     <span class="sr-only">Open menu</span>
                     <!-- Heroicon name: outline/menu -->
                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -190,7 +190,7 @@
 
     </div>
 </div>
-<div class="relative bg-yellow-500">
+<div class="relative bg-lacar-500">
     <div class="py-0.5 mt-3 mx-auto sm:mt-1">
     </div>
 </div>
@@ -219,7 +219,7 @@ To: "opacity-0 scale-95"
                 </div>
                 <div class="-mr-2">
                     <button type="button" @click="isOpen = false"
-                        class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-yellow-500">
+                        class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lacar-500">
                         <span class="sr-only">Close menu</span>
                         <!-- Heroicon name: outline/x -->
                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -238,7 +238,7 @@ To: "opacity-0 scale-95"
                             <div class="" @click="isOpen = !isOpen">
                                 <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>{{ $covid->name }}</span>
                                     <!--
 Heroicon name: solid/chevron-down
@@ -279,7 +279,7 @@ To: "opacity-0 translate-y-1"
                                                 x-on:mouseenter=" isSubOpen=!isSubOpen"
                                                 x-on:mouseleave="isSubOpen=false"
                                                 class="px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
-                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                                <div class="relative p-4 rounded-md hover:bg-lacar-500">
                                                     <a href="/p/{{ $kit->slug }}"
                                                         class="text-gray-600">{{ $kit->name }}</a>
 
@@ -297,7 +297,7 @@ To: "opacity-0 translate-y-1"
                             <div class="" @click="isOpen = !isOpen">
                                 <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Kits</span>
                                     <!--
 Heroicon name: solid/chevron-down
@@ -337,7 +337,7 @@ To: "opacity-0 translate-y-1"
                                                 x-on:mouseenter=" isSubOpen=!isSubOpen"
                                                 x-on:mouseleave="isSubOpen=false"
                                                 class="h-12 px-2 bg-gray-100 rounded-md bg-opacity-60 sm:gap-8 sm:p-8">
-                                                <div class="relative p-4 rounded-md hover:bg-yellow-500">
+                                                <div class="relative p-4 rounded-md hover:bg-lacar-500">
                                                     <a href="/{{ $cat->slug }}"
                                                         class="text-gray-600">{{ $cat->name }}</a>
                                                 </div>
@@ -350,7 +350,7 @@ To: "opacity-0 translate-y-1"
                         <div class="w-full my-4 transform sm:px-0">
                             <a href="/solutions">
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Solutions</span>
                                 </button>
                             </a>
@@ -359,7 +359,7 @@ To: "opacity-0 translate-y-1"
                         <div class="w-full my-4 transform sm:px-0">
                             <a href="/software">
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Software</span>
                                 </button>
                             </a>
@@ -368,7 +368,7 @@ To: "opacity-0 translate-y-1"
                         <div class="w-full my-4 transform sm:px-0">
                             <a href="/restricted">
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Restricted Area</span>
                                 </button>
                             </a>
@@ -377,7 +377,7 @@ To: "opacity-0 translate-y-1"
                         <div class="w-full my-4 transform sm:px-0">
                             <a href="/services">
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Services</span>
                                 </button>
                             </a>
@@ -386,7 +386,7 @@ To: "opacity-0 translate-y-1"
                         <div class="w-full my-4 transform sm:px-0">
                             <a href="/jobs">
                                 <button type="button"
-                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-yellow-500">
+                                    class="inline-flex items-center w-full text-base font-light text-gray-500 uppercase bg-white rounded-md font-ligh group hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-4 focus:ring-lacar-500">
                                     <span>Jobs</span>
                                 </button>
                             </a>
@@ -397,7 +397,7 @@ To: "opacity-0 translate-y-1"
         </div>
         <div class="py-4">
             <a href="/contact"
-                class="flex items-center justify-center w-1/2 px-4 py-2 mx-auto text-base font-light text-white uppercase bg-yellow-500 border border-transparent rounded-md shadow-sm hover:bg-yellow-700">
+                class="flex items-center justify-center w-1/2 px-4 py-2 mx-auto text-base font-light text-white uppercase border border-transparent rounded-md shadow-sm bg-lacar-500 hover:bg-lacar-700">
                 Contact us
             </a>
         </div>

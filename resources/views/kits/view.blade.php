@@ -8,7 +8,7 @@
         {{ Breadcrumbs::render('kit', $kit) }}
         <p class="mt-12 font-bold tracking-tight text-center text-gray-900 text-md lg:text-3xl">{{ $kit->name }}
         </p>
-        <div class="w-12 h-1 mx-auto my-4 bg-yellow-400"></div>
+        <div class="w-12 h-1 mx-auto my-4 bg-lacar-500"></div>
         <div class="w-3/4 p-4 mx-auto leading-normal text-center text-gray-600">
             {!! html_entity_decode($kit->description) !!}
         </div>
@@ -37,13 +37,13 @@
                 </div>
                 <div class="w-full pt-8 lg:w-1/2 lg:p-12">
                     <h2 class="text-2xl font-extrabold text-gray-800">INTENDED USE</h2>
-                    <div class="w-12 h-1 my-4 bg-yellow-400"></div>
+                    <div class="w-12 h-1 my-4 bg-lacar-500"></div>
                     <p class="mt-12 text-lg text-gray-600">{!! html_entity_decode($kit->intended_use) !!}</p>
                 </div>
             </div>
             <div class="my-20">
                 <h2 class="text-2xl font-extrabold text-gray-800">DISEASE INFORMATION</h2>
-                <div class="w-12 h-1 my-4 bg-yellow-400"></div>
+                <div class="w-12 h-1 my-4 bg-lacar-500"></div>
                 <div class="w-full mx-auto mt-12 text-lg prose text-gray-600">
                     {!! html_entity_decode($kit->disease_information) !!}
                 </div>

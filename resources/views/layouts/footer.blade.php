@@ -1,5 +1,5 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative bg-yellow-500">
+<div class="relative bg-lacar-500">
     <div class="px-3 py-1 mx-auto max-w-7xl sm:px-6 lg:px-8">
     </div>
 </div>
@@ -25,40 +25,40 @@
                 </h3>
                 <ul class="mt-4 space-y-4">
                     <li>
-                        <a href="/" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/" class="text-base text-gray-500 hover:text-lacar-500">
                             Home
                         </a>
                     </li>
 
                     {{-- <li>
-                        <a href="/kits" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/kits" class="text-base text-gray-500 hover:text-lacar-500">
                             Kits
                         </a>
                     </li> --}}
 
                     <li>
-                        <a href="/solutions" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/solutions" class="text-base text-gray-500 hover:text-lacar-500">
                             Solutions
                         </a>
                     </li>
 
                     <li>
-                        <a href="/software" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/software" class="text-base text-gray-500 hover:text-lacar-500">
                             Software
                         </a>
                     </li>
                     <li>
-                        <a href="/restricted" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/restricted" class="text-base text-gray-500 hover:text-lacar-500">
                             Restricted Area
                         </a>
                     </li>
                     <li>
-                        <a href="/services" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/services" class="text-base text-gray-500 hover:text-lacar-500">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a href="/jobs" class="text-base text-gray-500 hover:text-yellow-500">
+                        <a href="/jobs" class="text-base text-gray-500 hover:text-lacar-500">
                             Jobs
                         </a>
                     </li>

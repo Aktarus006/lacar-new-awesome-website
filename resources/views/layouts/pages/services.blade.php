@@ -19,7 +19,7 @@
         <h1 class="p-5 mt-10 text-lg text-black uppercase font-base sm:text-4xl">
             Services on demand
         </h1>
-        <div class="w-24 py-1 mx-auto my-5 bg-yellow-500"></div>
+        <div class="w-24 py-1 mx-auto my-5 bg-lacar-500"></div>
         <p class="mx-5 text-lg font-light">LaCAR also develops <span class="font-bold">customized constitutional genetic
                 assays</span> on demand. Feel free
             to <span class="font-bold">contact us</span> for more information</p>

@@ -22,7 +22,7 @@
             <div class="mx-auto text-base max-w-prose lg:max-w-none">
                 <h3 class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">SOFTWARE
                 </h3>
-                <div class="bg-yellow-500 py-0.5 w-16 mt-5"></div>
+                <div class="bg-lacar-500 py-0.5 w-16 mt-5"></div>
             </div>
             <div class="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                 <div class="relative lg:row-start-1 lg:col-start-2">
@@ -48,7 +48,7 @@
                 </div>
                 <div class="mt-8 lg:mt-0">
 
-                    <div class="mx-auto mt-5 prose text-gray-500 prose-yellow lg:max-w-none lg:row-start-1 lg:col-start-1">
+                    <div class="mx-auto mt-5 prose text-gray-500 prose-lacar lg:max-w-none lg:row-start-1 lg:col-start-1">
                         <p>GeneFox is an automatic interpretation software allowing the genotyping of the samples based on
                             melting curves analysis.</p>
                         <p>The software can be used with exported data files from several qPCR machines such as
@@ -61,7 +61,7 @@
                     </div>
                     <div class="mx-auto mt-5 prose lg:max-w-none lg:row-start-1 lg:col-start-1">
                         <a href="https://genefox-lacar.com/">
-                            <button class="px-5 py-3 font-medium text-white bg-yellow-500 rounded-lg ">Go to the
+                            <button class="px-5 py-3 font-medium text-white bg-lacar-500 rounded-lg ">Go to the
                                 software</button>
                         </a>
                     </div>

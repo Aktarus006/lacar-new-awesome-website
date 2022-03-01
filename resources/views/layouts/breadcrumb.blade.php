@@ -1,6 +1,7 @@
 @unless($breadcrumbs->isEmpty())
     <nav class="hidden bg-white border-b border-gray-200 lg:flex" aria-label="Breadcrumb"">
-                                                                <ol class="flex w-full max-w-screen-xl px-4 mx-auto space-x-4  sm:px-6 lg:px-8">
+                                                                    <ol class="
+        flex w-full max-w-screen-xl px-4 mx-auto space-x-4  sm:px-6 lg:px-8">
         @foreach ($breadcrumbs as $breadcrumb)
             @if ($breadcrumb->url && !$loop->last)
                 <li class="flex">
@@ -26,14 +27,14 @@
                     <div class="flex items-center">
                         @if ($breadcrumb->title === 'Home')
                             <!-- Heroicon name: solid/home -->
-                            <svg class="flex-shrink-0 w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg"
+                            <svg class="flex-shrink-0 w-5 h-5 text-lacar-500" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                             </svg>
                             <span class="sr-only">Home</span>
                         @else
-                            <span class="text-yellow-500">{{ $breadcrumb->title }}</span>
+                            <span class="text-lacar-500">{{ $breadcrumb->title }}</span>
                         @endif
                     </div>
                 </li>
@@ -52,7 +53,6 @@
                     </svg>
                 </li>
             @endif
-
         @endforeach
         </ol>
     </nav>

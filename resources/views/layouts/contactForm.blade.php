@@ -34,7 +34,6 @@
 
 
                 @if (count($errors))
-
                     <div class="w-full p-5 bg-red-100 rounded-md">
                         <div class="flex space-x-3">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -48,7 +47,6 @@
                         </div>
                     </div>
             </div>
-
             @endif
             <form action="{{ action('App\Http\Controllers\ContactFormController@contactForm') }}" method="POST"
                 class="grid grid-cols-1 mt-9 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -69,7 +67,7 @@
                         <div class="relative mt-1 rounded-md shadow-sm">
                             <input type="text" name="full_name" id="full_name" autocomplete="given-name"
                                 placeholder="John Doe"
-                                class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500">
+                                class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-lacar-500 focus:border-lacar-500">
                         </div>
                     @endif
                 </div>
@@ -161,7 +159,7 @@
                     </div>
                     <div class="mt-1">
                         <textarea id="message" name="message" aria-describedby="message_description" rows="4"
-                            class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-yellow-500 focus:border-yellow-500"></textarea>
+                            class="block w-full border-gray-300 rounded-md shadow-sm sm:text-sm focus:ring-lacar-500 focus:border-lacar-500"></textarea>
                     </div>
                 </div>
 
@@ -173,7 +171,7 @@
                 </div>
                 <div class="text-right sm:col-span-2">
                     <button type="submit"
-                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-yellow-500 border border-transparent rounded-md shadow-sm hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500">
+                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-lacar-500 border border-transparent rounded-md shadow-sm hover:bg-lacar-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-500">
                         Submit
                     </button>
                 </div>

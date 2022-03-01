@@ -25,7 +25,7 @@
                 <div class="relative py-16 bg-gray-50 sm:py-24 lg:py-32">
                     <div class="relative">
                         <div class="max-w-md px-4 mx-auto text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-                            <h2 class="text-base font-semibold tracking-wider uppercase text-cyan-600">Products & services
+                            <h2 class="text-base font-semibold tracking-wider text-lacar-700 uppercase">Products & services
                             </h2>
                             <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                                 For routine genetic testing

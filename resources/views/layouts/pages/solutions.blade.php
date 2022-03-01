@@ -24,7 +24,7 @@
                 <h2 class="text-lg font-light tracking-tight text-gray-900 sm:text-3xl">
                     3 DIFFERENT SOLUTIONS TO FIT WITH ALL LABS' VOLUMES
                 </h2>
-                <div class="relative w-24 mx-auto mt-5 bg-yellow-500">
+                <div class="relative w-24 mx-auto mt-5 bg-lacar-500">
                     <div class="px-3 py-0.5 mx-auto max-w-7xl sm:px-6 lg:px-8">
                     </div>
                 </div>

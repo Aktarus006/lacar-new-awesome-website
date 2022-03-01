@@ -5,7 +5,7 @@
     </td>
 
     <td class="float-right px-6 py-4 text-sm font-medium whitespace-nowrap">
-        <a href="{{ route('downloadFile', $document->id) }}" class="text-yellow-600 hover:text-yellow-900"><svg
+        <a href="{{ route('downloadFile', $document->id) }}" class="text-lacar-500 hover:text-lacar-900"><svg
                 xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

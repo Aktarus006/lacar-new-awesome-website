@@ -11,6 +11,7 @@ use App\Rules\GoogleRecaptcha;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 
 class ContactFormController extends Controller
 {
@@ -36,7 +37,6 @@ class ContactFormController extends Controller
         Contact::create($request->all());
         Mail::send(new ContactFormMessage());
 
-
-        return back()->with('success', 'We have received your message and would like to thank you for writing to us.');
+        return redirect(URL::previous(). '#contact')->with('success', 'We have received your message and would like to thank you for writing to us.');
     }
 }

@@ -1,4 +1,4 @@
-<div class="relative bg-white">
+<div class="relative bg-white" id="contact">
     <div class="lg:absolute lg:inset-0">
         <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <img class="object-cover object-left-top w-full h-56 lg:absolute lg:h-full"
@@ -94,7 +94,6 @@
                         </div>
                         <p class="mt-2 text-sm text-red-600" id="email-error">{{ $errors->first('email') }}</p>
                     @else
-
                         <div class="relative mt-1 rounded-md shadow-sm">
                             <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                                 <!-- Heroicon name: solid/mail -->
@@ -133,7 +132,6 @@
                         </div>
                         <p class="mt-2 text-sm text-red-600" id="phone-error">{{ $errors->first('phone') }}</p>
                     @else
-
                         <div class="relative mt-1 rounded-md shadow-sm">
                             <div class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                                 <!-- Heroicon name: solid/phone -->
@@ -171,7 +169,7 @@
                 </div>
                 <div class="text-right sm:col-span-2">
                     <button type="submit"
-                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-lacar-500 border border-transparent rounded-md shadow-sm hover:bg-lacar-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-500">
+                        class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-lacar-500 hover:bg-lacar-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lacar-500">
                         Submit
                     </button>
                 </div>

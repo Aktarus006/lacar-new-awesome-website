@@ -30,8 +30,8 @@ class ContactFormMessage extends Mailable
     public function build(Request $request)
     {
         return $this->from([
-                'address' => $request->email,
-                'full_name' => $request->full_name
+                'address' => env('MAIL_FROM_ADDRESS'),
+                'full_name' => env('MAIL_FROM_NAME')
             ])
             ->to(env('APP_ADMIN_CONTACT'))
             ->subject($request->subject)

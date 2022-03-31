@@ -34,6 +34,7 @@ class ContactFormMessage extends Mailable
                 'full_name' => env('MAIL_FROM_NAME')
             ])
             ->to(env('APP_ADMIN_CONTACT'))
+            ->cc($request->email)
             ->subject($request->subject)
             ->view('emails.contactForm')
             ->with([
